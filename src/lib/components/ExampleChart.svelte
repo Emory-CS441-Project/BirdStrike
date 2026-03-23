@@ -1,10 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
-	import type { BirdStrikeRow } from '$lib/types';
+
+	interface YearCount {
+		INCIDENT_YEAR: number;
+		count: number;
+	}
 
 	interface Props {
-		data: BirdStrikeRow[];
+		data: YearCount[];
 	}
 
 	let { data }: Props = $props();
@@ -26,25 +30,15 @@
 			.append('g')
 			.attr('transform', `translate(${margin.left},${margin.top})`);
 
-		const counts = d3.rollup(
-			data,
-			(v) => v.length,
-			(d) => d.INCIDENT_YEAR
-		);
-
-		const chartData = Array.from(counts, ([year, count]) => ({ year, count })).sort(
-			(a, b) => a.year - b.year
-		);
-
 		const x = d3
 			.scaleBand()
-			.domain(chartData.map((d) => String(d.year)))
+			.domain(data.map((d) => String(d.INCIDENT_YEAR)))
 			.range([0, innerWidth])
 			.padding(0.2);
 
 		const y = d3
 			.scaleLinear()
-			.domain([0, d3.max(chartData, (d) => d.count) ?? 0])
+			.domain([0, d3.max(data, (d) => d.count) ?? 0])
 			.nice()
 			.range([innerHeight, 0]);
 
@@ -57,9 +51,9 @@
 
 		svg
 			.selectAll('rect')
-			.data(chartData)
+			.data(data)
 			.join('rect')
-			.attr('x', (d) => x(String(d.year)) ?? 0)
+			.attr('x', (d) => x(String(d.INCIDENT_YEAR)) ?? 0)
 			.attr('y', (d) => y(d.count))
 			.attr('width', x.bandwidth())
 			.attr('height', (d) => innerHeight - y(d.count))

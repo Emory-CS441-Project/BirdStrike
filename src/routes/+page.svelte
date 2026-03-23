@@ -18,7 +18,7 @@
 	</section>
 
 	<div class="mb-16">
-		<ExampleChart data={data.data} />
+		<ExampleChart data={data.strikesbyYear} />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
@@ -26,7 +26,7 @@
 	</section>
 
 	<div class="mb-16">
-		<ExampleChart data={data.data} />
+		<ExampleChart data={data.strikesbyYear} />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
