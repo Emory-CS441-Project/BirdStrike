@@ -1,7 +1,13 @@
+import type { InteractionData } from '$lib/types';
+
 export const prerender = true;
 
 export async function load({ fetch }) {
-	const [yearRes] = await Promise.all([fetch('strikes_by_year.json')]);
+	const [yearRes, interactionRes] = await Promise.all([
+		fetch('strikes_by_year.json'),
+		fetch('InteractionHeatMap.json')
+	]);
 	const strikesbyYear = await yearRes.json();
-	return { strikesbyYear };
+	const interactionData: InteractionData = await interactionRes.json();
+	return { strikesbyYear, interactionData };
 }
