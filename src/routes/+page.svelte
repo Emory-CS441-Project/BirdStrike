@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ExampleChart from '$lib/components/ExampleChart.svelte';
 	import InteractionHeatMap from '$lib/components/InteractionHeatMap.svelte';
+	import StrikesByYear from '$lib/components/StrikesByYear.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -19,7 +19,7 @@
 	</section>
 
 	<div class="mb-16">
-		<ExampleChart data={data.strikesbyYear} />
+		<StrikesByYear data={data.strikesbyYear} />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
