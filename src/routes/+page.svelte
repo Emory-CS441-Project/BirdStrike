@@ -67,10 +67,10 @@
 
 	<section class="prose prose-lg mb-16 max-w-none">
 		<p>
-			The autumn concentration is especially stark around the Great Lakes and along the Eastern
+			The autumn concentration is especially strong around the Great Lakes and along the Eastern
 			Seaboard, where geography funnels migrating birds into narrow corridors directly overlapping
 			with the approach and departure paths of the nation's busiest airports. Airports like JFK,
-			O'Hare, and Atlanta's Hartsfield-Jackson sit squarely inside these corridors, making the
+			and O'Hare (ORD) sit squarely in these corridors, making the
 			collision risk less a matter of bad luck and more a matter of structural inevitability.
 		</p>
 	</section>
