@@ -1,9 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import * as d3 from 'd3';
+import * as d3 from 'd3';
 
-	let svgEl: SVGSVGElement;
-	let data: any[] = [];
+interface Props {
+    data: any[];
+}
+
+let { data }: Props = $props();
+
+let svgEl: SVGSVGElement;
 
 	const PART_GROUPS = [
     {
@@ -28,15 +33,13 @@
     },
 ];
 
-function isGroupHit(row: any, parts: string[]): boolean {
-    return parts.some(
-        (part) => row[`STR_${part}`] === '1' && row[`DAM_${part}`] === '1'
-    );
+function totalCost(row: any): number {
+    return row.y;
 }
 
-	function totalCost(row: any): number {
-		return (row.COST_REPAIRS ?? 0) + (row.COST_OTHER ?? 0);
-	}
+function isGroupHit(row: any, parts: string[]): boolean {
+    return parts.some(p => row.h.includes(p));
+}
 
 	function boxStats(values: number[]) {
 		const sorted = [...values].sort((a, b) => a - b);
@@ -52,6 +55,7 @@ function isGroupHit(row: any, parts: string[]): boolean {
 
 	function draw() {
 		if (!data.length) return;
+		if (!svgEl || svgEl.clientWidth === 0) return;
 
 		const margin = { top: 20, right: 20, bottom: 60, left: 80 };
 		const width = svgEl.clientWidth;
@@ -68,13 +72,12 @@ for (const { key, label } of PART_GROUPS) {
 }
 
 for (const row of data) {
-    const cost = totalCost(row);
-    if (cost <= 0) continue;
-
+    const cost = row.y;
+    if (cost <= 0 || !row.h?.length) continue;
     for (const { key, parts } of PART_GROUPS) {
         if (isGroupHit(row, parts)) {
             groups.get(key)!.costs.push(cost);
-            break; // assign to first matching group only
+            break;
         }
     }
 }
@@ -114,7 +117,7 @@ for (const row of data) {
 
 		// --- Legend ---
 		const legendItemHeight = 20;
-		const legendCols = Math.floor(innerWidth / 160);
+		const legendCols = Math.max(1, Math.floor(innerWidth / 160));
 		const legendRows = Math.ceil(allLabels.length / legendCols);
 		const legendHeight = legendRows * legendItemHeight + 12;
 		const totalHeight = height + legendHeight;
@@ -236,14 +239,12 @@ for (const row of data) {
 		});
 	}
 
-	onMount(async () => {
-		const res = await fetch('/NewCost.json');
-		data = await res.json();
-		draw();
-		const ro = new ResizeObserver(() => draw());
-		ro.observe(svgEl);
-		return () => ro.disconnect();
-	});
+	onMount(() => {
+    if (data?.length) draw();
+    const ro = new ResizeObserver(() => draw());
+    ro.observe(svgEl);
+    return () => ro.disconnect();
+});
 </script>
 
 <figure>

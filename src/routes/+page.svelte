@@ -73,7 +73,7 @@
 	</section>
 
 	<div class="mb-16">
-		<CostPlot />
+		<CostPlot data={data.NewCost} />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
