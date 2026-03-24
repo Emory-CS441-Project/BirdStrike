@@ -123,7 +123,9 @@
 <figure>
 	<div class="mb-3 flex items-center justify-between">
 		<span class="text-sm text-gray-500">
-			{mode === 'traffic' ? 'Total air traffic by year' : 'Bird strike incidents per million flights'}
+			{mode === 'traffic'
+				? 'Total air traffic by year'
+				: 'Bird strike incidents per million flights'}
 		</span>
 		<div class="flex gap-2">
 			<button
@@ -143,7 +145,7 @@
 		</div>
 	</div>
 	<svg bind:this={svgEl} class="block w-full"></svg>
-    <figcaption class="mt-2 text-sm text-gray-500">
+	<figcaption class="mt-2 text-sm text-gray-500">
 		Air Traffic Data from Bureau of Transportation Statistics
 	</figcaption>
 </figure>

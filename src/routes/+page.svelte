@@ -38,29 +38,33 @@
 		<StrikesByTraffic data={data.strikesbyYear} traffic={data.Traffic} />
 	</div>
 
-
 	<section class="prose prose-lg mb-16 max-w-none">
 		<p>Paragraph here.</p>
 	</section>
 
 	<section class="prose prose-lg mb-16 max-w-none">
 		<p>
-			Airports are legally required to manage wildlife within a five-mile radius, and yet this five-mile radius is actually where birds are most in danger, accounting for the vast majority of collisions. In this “Responsibility zone” the most deadly airports are killing birds of over 200 unique species. That's an entire ecosystem that has been placed in the crosshair of the commercial airline industry. This ecosystem is only destroyed further by continuous expansions, leaving the birds without a habitat (the leading reason for decline in bird population). Then due to poor restructuring of the area the birds end up waiting on the tarmac for their turn.
+			Airports are legally required to manage wildlife within a five-mile radius, and yet this
+			five-mile radius is actually where birds are most in danger, accounting for the vast majority
+			of collisions. In this “Responsibility zone” the most deadly airports are killing birds of
+			over 200 unique species. That's an entire ecosystem that has been placed in the crosshair of
+			the commercial airline industry. This ecosystem is only destroyed further by continuous
+			expansions, leaving the birds without a habitat (the leading reason for decline in bird
+			population). Then due to poor restructuring of the area the birds end up waiting on the tarmac
+			for their turn.
 		</p>
 	</section>
 
 	<section class="prose prose-lg mb-4 max-w-none">
 		<h2>Map Stuff</h2>
-		<p>
-			Explain
-		</p>
+		<p>Explain</p>
 	</section>
 
 	<!-- Map Vis -->
 	<div class="mb-16">
 		<!-- <MapVis data={data.mapData} /> -->
 	</div>
-	
+
 	<section class="prose prose-lg mb-4 max-w-none">
 		<h2>Granular Interaction Data</h2>
 		<p>Exploration of the data grouped by top species and top airlines.</p>
@@ -71,30 +75,32 @@
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
-		<p>It would also benefit the airlines to reduce the number of collisions. 
-		The repairs alone are a great cost for the airlines and have even increased in recent years, with struck engines 
-		rising above 100,000$ on average to fix. These collisions can also lead 
-		to delayed flights, or diversions, in the worst case there can even be 
-		forced emergency landings, injuries and even death. Airlines have an incentive 
-		to avoid these collisions however they have decided to make their planes more 
-		bird resistant, as opposed to reducing collisions in general. The inflation 
-		adjusted cost of repairs due to a strike has been steadily decreasing since 2010. 
-		This has obvious benefits for humans on vacation, but now airlines have less reason 
-		to care and birds are more at risk than ever.</p>
+		<p>
+			It would also benefit the airlines to reduce the number of collisions. The repairs alone are a
+			great cost for the airlines and have even increased in recent years, with struck engines
+			rising above 100,000$ on average to fix. These collisions can also lead to delayed flights, or
+			diversions, in the worst case there can even be forced emergency landings, injuries and even
+			death. Airlines have an incentive to avoid these collisions however they have decided to make
+			their planes more bird resistant, as opposed to reducing collisions in general. The inflation
+			adjusted cost of repairs due to a strike has been steadily decreasing since 2010. This has
+			obvious benefits for humans on vacation, but now airlines have less reason to care and birds
+			are more at risk than ever.
+		</p>
 	</section>
 
 	<div class="mb-16">
-		<CostPlot data={data.NewCost} />
+		<CostPlot boxData={data.CostBox} trendData={data.CostTrend} />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
-		<p>As technology improves and planes become more bird resistant, 
-		airlines will no longer have to weigh human safety vs. flight delays 
-		and can just plow through birds, treating them as acceptable collateral. 
-		This problem isn't unsolvable, but the airline industry as a whole 
-		has been deciding not to solve it, as seen by the widespread increase 
-		in collisions across the entire country. Delaying flights out of cautiousness 
-		and investing in better migration monitoring systems cost the airports money, 
-		while expanding runways into an already damaged ecosystem makes money. </p>
+		<p>
+			As technology improves and planes become more bird resistant, airlines will no longer have to
+			weigh human safety vs. flight delays and can just plow through birds, treating them as
+			acceptable collateral. This problem isn't unsolvable, but the airline industry as a whole has
+			been deciding not to solve it, as seen by the widespread increase in collisions across the
+			entire country. Delaying flights out of cautiousness and investing in better migration
+			monitoring systems cost the airports money, while expanding runways into an already damaged
+			ecosystem makes money.
+		</p>
 	</section>
 </main>

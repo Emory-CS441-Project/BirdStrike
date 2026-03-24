@@ -1,48 +1,35 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-import * as d3 from 'd3';
+	import * as d3 from 'd3';
 
-interface Props {
-    data: any[];
-}
+	interface DamageGroup {
+		category: string;
+		values: number[];
+	}
 
-let { data }: Props = $props();
+	interface TrendRow {
+		year: number;
+		avg_total_cost: number;
+	}
 
-let svgEl: SVGSVGElement;
+	interface Props {
+		boxData: DamageGroup[];
+		trendData: TrendRow[];
+	}
 
-	const PART_GROUPS = [
-    {
-        key: 'ENGINES',
-        label: 'Engines',
-        parts: ['ENG1', 'ENG2', 'ENG3', 'ENG4']
-    },
-    {
-        key: 'STRUCTURE',
-        label: 'Fuselage & Structure',
-        parts: ['FUSE', 'TAIL', 'WING_ROT', 'LG']
-    },
-    {
-        key: 'COCKPIT',
-        label: 'Cockpit & Sensors',
-        parts: ['WINDSHLD', 'NOSE', 'RAD']
-    },
-    {
-        key: 'OTHER',
-        label: 'Other',
-        parts: ['PROP', 'LGHTS', 'OTHER']
-    },
-];
+	let { boxData, trendData }: Props = $props();
 
-function totalCost(row: any): number {
-    return row.y;
-}
+	let svgEl: SVGSVGElement;
+	let mode: 'box' | 'trend' = $state('box');
 
-function isGroupHit(row: any, parts: string[]): boolean {
-    return parts.some(p => row.h.includes(p));
-}
+	const MARGIN = { top: 24, right: 24, bottom: 56, left: 80 };
+	const HEIGHT = 420;
+	const INNER_H = HEIGHT - MARGIN.top - MARGIN.bottom;
+	const COLORS = ['#378ADD', '#1D9E75', '#D85A30', '#7F77DD'];
 
 	function boxStats(values: number[]) {
-		const sorted = [...values].sort((a, b) => a - b);
+		const sorted = [...values].filter((v) => v > 0).sort((a, b) => a - b);
+		if (sorted.length < 3) return null;
 		const q1 = d3.quantile(sorted, 0.25)!;
 		const median = d3.quantile(sorted, 0.5)!;
 		const q3 = d3.quantile(sorted, 0.75)!;
@@ -50,188 +37,333 @@ function isGroupHit(row: any, parts: string[]): boolean {
 		const whiskerLow = Math.max(sorted[0], q1 - 1.5 * iqr);
 		const whiskerHigh = Math.min(sorted[sorted.length - 1], q3 + 1.5 * iqr);
 		const outliers = sorted.filter((v) => v < whiskerLow || v > whiskerHigh);
-		return { q1, median, q3, whiskerLow, whiskerHigh, outliers };
+		return { q1, median, q3, whiskerLow, whiskerHigh, outliers, n: sorted.length };
 	}
 
 	function draw() {
-    if (!data?.length) return;
-    if (!svgEl || svgEl.clientWidth === 0) return;
+		if (!svgEl || svgEl.clientWidth === 0) return;
+		mode === 'box' ? drawBox() : drawTrend();
+	}
 
-    const margin = { top: 20, right: 20, bottom: 60, left: 80 };
-    const width = svgEl.clientWidth;
-    const height = 400;
-    const innerWidth = width - margin.left - margin.right;
-    const innerHeight = height - margin.top - margin.bottom;
+	function drawBox() {
+		const innerWidth = svgEl.clientWidth - MARGIN.left - MARGIN.right;
 
-    d3.select(svgEl).selectAll('*').remove();
+		d3.select(svgEl).selectAll('*').remove();
+		d3.select(svgEl).attr('viewBox', `0 0 ${svgEl.clientWidth} ${HEIGHT}`);
 
-    const eras = [
-        { key: 'early', label: '1990–2008' },
-        { key: 'late',  label: '2009–2026' },
-    ];
+		const groups = boxData
+			.map((d, i) => ({ ...d, stats: boxStats(d.values), color: COLORS[i % COLORS.length] }))
+			.filter((d) => d.stats !== null);
 
-    // Build groups for each era
-    function buildGroups(eraKey: string) {
-        const groups = new Map<string, { label: string; costs: number[] }>();
-        for (const { key, label } of PART_GROUPS) {
-            groups.set(key, { label, costs: [] });
-        }
-        for (const row of data) {
-            if (row.era !== eraKey) continue;
-            const cost = row.y;
-            if (cost <= 0 || !row.h?.length) continue;
-            for (const { key, parts } of PART_GROUPS) {
-                if (isGroupHit(row, parts)) {
-                    groups.get(key)!.costs.push(cost);
-                    break;
-                }
-            }
-        }
-        return [...groups.entries()]
-            .filter(([, g]) => g.costs.length >= 3)
-            .map(([key, g]) => ({ key, ...g, stats: boxStats(g.costs) }))
-            .sort((a, b) => b.stats.median - a.stats.median);
-    }
+		const allValues = groups.flatMap((g) => [
+			g.stats!.whiskerLow,
+			g.stats!.whiskerHigh,
+			...g.stats!.outliers
+		]);
+		const y = d3
+			.scaleLog()
+			.domain([Math.max(1, d3.min(allValues)!), d3.max(allValues)!])
+			.nice()
+			.range([INNER_H, 0]);
 
-    const earlyGroups = buildGroups('early');
-    const lateGroups  = buildGroups('late');
-    const allLabels   = [...new Set([...earlyGroups, ...lateGroups].map(g => g.label))];
+		const x = d3
+			.scaleBand()
+			.domain(groups.map((g) => g.category))
+			.range([0, innerWidth])
+			.padding(0.35);
 
-    // Shared y scale across both panels
-    const allValues = [...earlyGroups, ...lateGroups].flatMap((g) => [
-        g.stats.whiskerLow,
-        g.stats.whiskerHigh,
-        ...g.stats.outliers,
-    ]);
-    const y = d3.scaleLog()
-        .domain([Math.max(1, d3.min(allValues)!), d3.max(allValues)!])
-        .nice()
-        .range([innerHeight, 0]);
+		const root = d3
+			.select(svgEl)
+			.append('g')
+			.attr('transform', `translate(${MARGIN.left},${MARGIN.top})`);
 
-    const color = d3.scaleOrdinal<string>()
-        .domain(allLabels)
-        .range(d3.schemeTableau10);
+		root
+			.append('g')
+			.attr('stroke', 'currentColor')
+			.attr('stroke-opacity', 0.08)
+			.selectAll('line')
+			.data(y.ticks(6))
+			.join('line')
+			.attr('x1', 0)
+			.attr('x2', innerWidth)
+			.attr('y1', (d) => y(d))
+			.attr('y2', (d) => y(d));
 
-    // Legend
-    const legendItemHeight = 20;
-    const legendCols = Math.max(1, Math.floor(innerWidth / 160));
-    const legendRows = Math.ceil(allLabels.length / legendCols);
-    const legendHeight = legendRows * legendItemHeight + 12;
-    const totalHeight = height + legendHeight + 30; // extra for era labels
+		root
+			.append('g')
+			.call(
+				d3
+					.axisLeft(y)
+					.ticks(6)
+					.tickFormat((d) =>
+						d3
+							.format('$~s')(d as number)
+							.replace('G', 'B')
+					)
+			)
+			.call((g) => g.select('.domain').remove())
+			.call((g) => g.selectAll('text').attr('fill', 'currentColor').attr('font-size', '12px'));
 
-    d3.select(svgEl).attr('viewBox', `0 0 ${width} ${totalHeight}`);
+		root
+			.append('text')
+			.attr('transform', 'rotate(-90)')
+			.attr('x', -INNER_H / 2)
+			.attr('y', -64)
+			.attr('text-anchor', 'middle')
+			.attr('font-size', '12px')
+			.attr('fill', 'currentColor')
+			.attr('opacity', 0.5)
+			.text('Inflation adjusted cost (log scale)');
 
-    // Legend above
-    const legend = d3.select(svgEl).append('g')
-        .attr('transform', `translate(${margin.left}, ${margin.top})`);
-    allLabels.forEach((label, i) => {
-        const col = i % legendCols;
-        const row = Math.floor(i / legendCols);
-        const g = legend.append('g')
-            .attr('transform', `translate(${col * 160}, ${row * legendItemHeight})`);
-        g.append('rect').attr('width', 12).attr('height', 12).attr('rx', 2).attr('fill', color(label));
-        g.append('text').attr('x', 18).attr('y', 10).attr('font-size', '12px').attr('fill', 'currentColor').text(label);
-    });
+		root
+			.append('g')
+			.attr('transform', `translate(0,${INNER_H})`)
+			.call(d3.axisBottom(x).tickSize(0))
+			.call((g) => g.select('.domain').attr('stroke', 'currentColor').attr('opacity', 0.15))
+			.call((g) =>
+				g
+					.selectAll('text')
+					.attr('fill', 'currentColor')
+					.attr('font-size', '13px')
+					.attr('dy', '1.4em')
+			);
 
-    // Draw each era panel side by side
-    const panelWidth = (innerWidth - 20) / 2; // 20px gap between panels
+		for (const group of groups) {
+			const s = group.stats!;
+			const c = group.color;
+			const bx = x(group.category)!;
+			const bw = x.bandwidth();
+			const cx = bx + bw / 2;
+			const cap = bw * 0.25;
+			const g = root.append('g');
 
-    eras.forEach(({ key, label }, eraIndex) => {
-        const groups = key === 'early' ? earlyGroups : lateGroups;
-        const panelX = margin.left + eraIndex * (panelWidth + 20);
+			g.append('line')
+				.attr('x1', cx)
+				.attr('x2', cx)
+				.attr('y1', y(s.whiskerLow))
+				.attr('y2', y(s.q1))
+				.attr('stroke', c)
+				.attr('stroke-width', 1.5)
+				.attr('stroke-dasharray', '3,3');
+			g.append('line')
+				.attr('x1', cx)
+				.attr('x2', cx)
+				.attr('y1', y(s.q3))
+				.attr('y2', y(s.whiskerHigh))
+				.attr('stroke', c)
+				.attr('stroke-width', 1.5)
+				.attr('stroke-dasharray', '3,3');
+			g.append('line')
+				.attr('x1', cx - cap)
+				.attr('x2', cx + cap)
+				.attr('y1', y(s.whiskerLow))
+				.attr('y2', y(s.whiskerLow))
+				.attr('stroke', c)
+				.attr('stroke-width', 1.5);
+			g.append('line')
+				.attr('x1', cx - cap)
+				.attr('x2', cx + cap)
+				.attr('y1', y(s.whiskerHigh))
+				.attr('y2', y(s.whiskerHigh))
+				.attr('stroke', c)
+				.attr('stroke-width', 1.5);
+			g.append('rect')
+				.attr('x', bx)
+				.attr('y', y(s.q3))
+				.attr('width', bw)
+				.attr('height', y(s.q1) - y(s.q3))
+				.attr('fill', c)
+				.attr('opacity', 0.55)
+				.attr('rx', 3);
+			g.append('line')
+				.attr('x1', bx)
+				.attr('x2', bx + bw)
+				.attr('y1', y(s.median))
+				.attr('y2', y(s.median))
+				.attr('stroke', 'white')
+				.attr('stroke-width', 2);
+			root
+				.append('text')
+				.attr('x', cx)
+				.attr('y', y(s.median) - 6)
+				.attr('text-anchor', 'middle')
+				.attr('font-size', '12px')
+				.attr('fill', 'currentColor')
+				.attr('opacity', 0.7)
+				.text(d3.format('$~s')(s.median).replace('G', 'B'));
+			g.selectAll('circle')
+				.data(s.outliers)
+				.join('circle')
+				.attr('cx', cx)
+				.attr('cy', (d) => y(d))
+				.attr('r', 2.5)
+				.attr('fill', c)
+				.attr('opacity', 0.35);
+			root
+				.append('text')
+				.attr('x', cx)
+				.attr('y', INNER_H + 42)
+				.attr('text-anchor', 'middle')
+				.attr('font-size', '11px')
+				.attr('fill', 'currentColor')
+				.attr('opacity', 0.45)
+				.text(`n=${s.n.toLocaleString()}`);
+		}
+	}
 
-        const x = d3.scaleBand()
-            .domain(groups.map(g => g.label))
-            .range([0, panelWidth])
-            .padding(0.3);
+	function drawTrend() {
+		const innerWidth = svgEl.clientWidth - MARGIN.left - MARGIN.right;
 
-        const panel = d3.select(svgEl).append('g')
-            .attr('transform', `translate(${panelX}, ${margin.top + legendHeight})`);
+		d3.select(svgEl).selectAll('*').remove();
+		d3.select(svgEl).attr('viewBox', `0 0 ${svgEl.clientWidth} ${HEIGHT}`);
 
-        // Era label
-        panel.append('text')
-            .attr('x', panelWidth / 2)
-            .attr('y', -8)
-            .attr('text-anchor', 'middle')
-            .attr('font-size', '13px')
-            .attr('font-weight', 'bold')
-            .attr('fill', 'currentColor')
-            .text(label);
+		const x = d3
+			.scaleLinear()
+			.domain(d3.extent(trendData, (d) => d.year) as [number, number])
+			.range([0, innerWidth]);
 
-        // X axis
-        panel.append('g')
-            .attr('transform', `translate(0,${innerHeight})`)
-            .call(d3.axisBottom(x))
-            .selectAll('text')
-            .attr('transform', 'rotate(-30)')
-            .attr('text-anchor', 'end')
-            .attr('dx', '-0.5em')
-            .attr('dy', '0.15em');
+		const y = d3
+			.scaleLinear()
+			.domain([0, d3.max(trendData, (d) => d.avg_total_cost)!])
+			.nice()
+			.range([INNER_H, 0]);
 
-        // Y axis (only on left panel)
-        if (eraIndex === 0) {
-            panel.append('g').call(
-                d3.axisLeft(y).ticks(6)
-                    .tickFormat((d) => d3.format('$~s')(d as number).replace('G', 'B'))
-            );
-            panel.append('text')
-                .attr('transform', 'rotate(-90)')
-                .attr('x', -innerHeight / 2)
-                .attr('y', -60)
-                .attr('text-anchor', 'middle')
-                .attr('font-size', '12px')
-                .attr('fill', 'currentColor')
-                .text('Inflation-Adjusted Cost (2024 $, log scale)');
-        }
+		const line = d3
+			.line<TrendRow>()
+			.x((d) => x(d.year))
+			.y((d) => y(d.avg_total_cost))
+			.curve(d3.curveMonotoneX);
 
-        // Box plots
-        for (const group of groups) {
-            const { label: glabel, stats } = group;
-            const cx = x(glabel)! + x.bandwidth() / 2;
-            const bw = x.bandwidth();
-            const c = color(glabel);
-            const g = panel.append('g');
+		const root = d3
+			.select(svgEl)
+			.append('g')
+			.attr('transform', `translate(${MARGIN.left},${MARGIN.top})`);
 
-            g.append('line').attr('x1', cx).attr('x2', cx)
-                .attr('y1', y(stats.whiskerLow)).attr('y2', y(stats.q1))
-                .attr('stroke', c).attr('stroke-dasharray', '3,3');
-            g.append('line').attr('x1', cx).attr('x2', cx)
-                .attr('y1', y(stats.q3)).attr('y2', y(stats.whiskerHigh))
-                .attr('stroke', c).attr('stroke-dasharray', '3,3');
-            g.append('line')
-                .attr('x1', cx - bw * 0.2).attr('x2', cx + bw * 0.2)
-                .attr('y1', y(stats.whiskerLow)).attr('y2', y(stats.whiskerLow))
-                .attr('stroke', c);
-            g.append('line')
-                .attr('x1', cx - bw * 0.2).attr('x2', cx + bw * 0.2)
-                .attr('y1', y(stats.whiskerHigh)).attr('y2', y(stats.whiskerHigh))
-                .attr('stroke', c);
-            g.append('rect')
-                .attr('x', x(glabel)!).attr('y', y(stats.q3))
-                .attr('width', bw).attr('height', y(stats.q1) - y(stats.q3))
-                .attr('fill', c).attr('opacity', 0.6).attr('rx', 2);
-            g.append('line')
-                .attr('x1', x(glabel)!).attr('x2', x(glabel)! + bw)
-                .attr('y1', y(stats.median)).attr('y2', y(stats.median))
-                .attr('stroke', 'white').attr('stroke-width', 2);
-            g.selectAll('circle').data(stats.outliers).join('circle')
-                .attr('cx', cx).attr('cy', (d) => y(d))
-                .attr('r', 3).attr('fill', c).attr('opacity', 0.4);
-        }
-    });
-}
+		// Gridlines
+		root
+			.append('g')
+			.attr('stroke', 'currentColor')
+			.attr('stroke-opacity', 0.08)
+			.selectAll('line')
+			.data(y.ticks(6))
+			.join('line')
+			.attr('x1', 0)
+			.attr('x2', innerWidth)
+			.attr('y1', (d) => y(d))
+			.attr('y2', (d) => y(d));
+
+		// Area fill under line
+		const area = d3
+			.area<TrendRow>()
+			.x((d) => x(d.year))
+			.y0(INNER_H)
+			.y1((d) => y(d.avg_total_cost))
+			.curve(d3.curveMonotoneX);
+
+		root
+			.append('path')
+			.datum(trendData)
+			.attr('fill', '#378ADD')
+			.attr('opacity', 0.08)
+			.attr('d', area);
+
+		root
+			.append('g')
+			.attr('transform', `translate(0,${INNER_H})`)
+			.call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(8))
+			.call((g) => g.select('.domain').attr('stroke', 'currentColor').attr('opacity', 0.15))
+			.call((g) => g.selectAll('text').attr('fill', 'currentColor').attr('font-size', '11px'));
+
+		root
+			.append('g')
+			.call(
+				d3
+					.axisLeft(y)
+					.ticks(6)
+					.tickFormat((d) =>
+						d3
+							.format('$~s')(d as number)
+							.replace('G', 'B')
+					)
+			)
+			.call((g) => g.select('.domain').remove())
+			.call((g) => g.selectAll('text').attr('fill', 'currentColor').attr('font-size', '12px'));
+
+		root
+			.append('text')
+			.attr('transform', 'rotate(-90)')
+			.attr('x', -INNER_H / 2)
+			.attr('y', -64)
+			.attr('text-anchor', 'middle')
+			.attr('font-size', '12px')
+			.attr('fill', 'currentColor')
+			.attr('opacity', 0.5)
+			.text('Avg inflation adjusted cost');
+
+		root
+			.append('path')
+			.datum(trendData)
+			.attr('fill', 'none')
+			.attr('stroke', '#378ADD')
+			.attr('stroke-width', 2)
+			.attr('d', line);
+
+		// Dots on each year
+		root
+			.selectAll('circle')
+			.data(trendData)
+			.join('circle')
+			.attr('cx', (d) => x(d.year))
+			.attr('cy', (d) => y(d.avg_total_cost))
+			.attr('r', 3)
+			.attr('fill', '#378ADD');
+	}
 
 	onMount(() => {
-    if (data?.length) draw();
-    const ro = new ResizeObserver(() => draw());
-    ro.observe(svgEl);
-    return () => ro.disconnect();
-});
+		draw();
+		const ro = new ResizeObserver(() => draw());
+		ro.observe(svgEl);
+		return () => ro.disconnect();
+	});
+
+	$effect(() => {
+		mode;
+		if (svgEl) draw();
+	});
 </script>
 
 <figure>
+	<div class="mb-3 flex items-center justify-between">
+		<span class="text-sm text-gray-500">
+			{mode === 'box'
+				? 'Repair cost distribution by damage category'
+				: 'Average inflation adjusted incident cost per year'}
+		</span>
+		<div class="flex gap-2">
+			<button
+				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
+          {mode === 'box'
+					? 'bg-gray-700 text-white'
+					: 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
+				onclick={() => (mode = 'box')}
+			>
+				By category
+			</button>
+			<button
+				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
+          {mode === 'trend'
+					? 'bg-gray-700 text-white'
+					: 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
+				onclick={() => (mode = 'trend')}
+			>
+				Cost over time
+			</button>
+		</div>
+	</div>
 	<svg bind:this={svgEl} class="block w-full"></svg>
 	<figcaption class="mt-2 text-sm text-gray-500">
-		Repair cost distribution by aircraft part struck and damaged (log scale)
+		{mode === 'box'
+			? 'Boxes show IQR, line shows median, dots are outliers. Log scale for visibility.'
+			: 'Average total inflation adjusted cost per incident over time. Linear Scale.'}
 	</figcaption>
 </figure>
