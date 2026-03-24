@@ -1,9 +1,6 @@
 <script lang="ts">
-	import ExampleChart from '$lib/components/ExampleChart.svelte';
-
 	import InteractionHeatMap from '$lib/components/InteractionHeatMap.svelte';
-
-	import Vis1 from '$lib/components/Vis1.svelte';
+	import StrikesByYear from '$lib/components/StrikesByYear.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -22,16 +19,12 @@
 	</section>
 
 	<div class="mb-16">
-		<ExampleChart data={data.strikesbyYear} />
+		<StrikesByYear data={data.strikesbyYear} />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
 		<p>Vis1 paragraph here.</p>
 	</section>
-
-	<div class="mb-16">
-		<Vis1 data={data.data} />
-	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
 		<p>Airports are legally required to manage wildlife within a five-mile radius, and yet this five-mile radius is actually where birds are most in danger accounting for the vast majority of colisions. In fact, over 95% of bird strikes fall into what the FAA calls the “responsibility zone”. 
