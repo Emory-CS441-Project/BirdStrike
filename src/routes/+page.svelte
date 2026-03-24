@@ -75,8 +75,11 @@
 		<p>Exploration of the data grouped by top species and top airlines.</p>
 	</section>
 
-	<div class="mb-16">
-		<InteractionHeatMap data={data.interactionData} />
+	<div class="flex">
+		<div class="flex-1/2">
+			<InteractionHeatMap data={data.interactionData} />
+		</div>
+		<section class="flex-1/2 pt-40 pl-10">Test</section>
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
