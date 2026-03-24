@@ -47,6 +47,18 @@
 	</section>
 
 	<section class="prose prose-lg mb-4 max-w-none">
+		<h2>Map Stuff</h2>
+		<p>
+			Explain
+		</p>
+	</section>
+
+	<!-- Map Vis -->
+	<div class="mb-16">
+		<!-- <MapVis data={data.mapData} /> -->
+	</div>
+	
+	<section class="prose prose-lg mb-4 max-w-none">
 		<h2>Granular Interaction Data</h2>
 		<p>Exploration of the data grouped by top species and top airlines.</p>
 	</section>
