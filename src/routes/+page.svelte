@@ -10,7 +10,7 @@
 	<header class="mb-16">
 		<h1 class="mb-4 text-4xl font-bold">Article Title</h1>
 		<p class="text-lg text-gray-500">
-			A sentance or two about what this is about. Talk about some other things too.
+			A sentence or two about what this is about. Talk about some other things too.
 		</p>
 	</header>
 
