@@ -176,35 +176,36 @@
 </script>
 
 <figure>
-	<div class="mb-3 flex flex-wrap items-center gap-2">
-		<div class="flex gap-2">
+	<div class="mb-3 flex items-center gap-2">
+		<div class="mr-auto flex gap-2">
 			<button
-				class="rounded px-3 py-1 text-sm font-medium transition-colors
-					{metric === 'incidents' ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
+				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
+					{metric === 'incidents' ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
 				onclick={() => (metric = 'incidents')}
 			>
 				Incidents
 			</button>
 			<button
-				class="rounded px-3 py-1 text-sm font-medium transition-colors
+				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
 					{metric === 'est_birds_struck'
-					? 'bg-blue-600 text-white'
+					? 'bg-gray-700 text-white'
 					: 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
 				onclick={() => (metric = 'est_birds_struck')}
 			>
-				Est. Birds Struck
+				Estimated Strikes
 			</button>
 		</div>
-		<div class="ml-auto flex gap-2">
+		<div class="m-auto flex text-lg">Bird Strikes Over Time By Phase Of Flight</div>
+		<div class="ml-auto flex gap-2 px-20">
 			<button
-				class="rounded px-3 py-1 text-sm font-medium transition-colors
+				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
 					{viewMode === 'stacked' ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
 				onclick={() => (viewMode = 'stacked')}
 			>
 				Stacked
 			</button>
 			<button
-				class="rounded px-3 py-1 text-sm font-medium transition-colors
+				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
 					{viewMode === 'split' ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
 				onclick={() => (viewMode = 'split')}
 			>
@@ -214,6 +215,6 @@
 	</div>
 	<svg bind:this={svgEl} class="block w-full"></svg>
 	<figcaption class="mt-2 text-sm text-gray-500">
-		Bird strikes by year — stacked by phase of flight
+		Bird strikes by year stacked by phase of flight
 	</figcaption>
 </figure>

@@ -14,8 +14,14 @@
 		</p>
 	</header>
 
-	<section class="prose prose-lg mb-16 max-w-none">
-		<p>Example paragraph here.</p>
+	<section class="prose prose-lg mb-4 max-w-none">
+		<h2>Introduction</h2>
+		<p>
+			Expoloration of strikes increasing over time. Incidents is total number of reports in the
+			year. Estimated Strikes accounts for how many birds were involved in each incident. Then to
+			better understand the different phase of flight categories there is the ability to split by
+			group.
+		</p>
 	</section>
 
 	<div class="mb-16">
