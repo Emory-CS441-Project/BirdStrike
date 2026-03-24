@@ -4,6 +4,7 @@
 	import type { PageData } from './$types';
 	import CostPlot from '$lib/components/CostPlot.svelte';
 	import StrikesByTraffic from '$lib/components/StrikesByTraffic.svelte';
+	import SpeciesBreakdown from '$lib/components/SpeciesBreakdown.svelte';
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -36,6 +37,10 @@
 
 	<div class="mb-16">
 		<StrikesByTraffic data={data.strikesbyYear} traffic={data.Traffic} />
+	</div>
+
+	<div class="mb-16">
+		<SpeciesBreakdown data={data.speciesStrikes} />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
