@@ -27,9 +27,17 @@
 	</section>
 
 	<section class="prose prose-lg mb-16 max-w-none">
-		<p>Airports are legally required to manage wildlife within a five-mile radius, and yet this five-mile radius is actually where birds are most in danger accounting for the vast majority of colisions. In fact, over 95% of bird strikes fall into what the FAA calls the “responsibility zone”. 
-In this “Responsibility zone” the most deadly airports are killing birds of over 200 unique species. That's an entire ecosystem that has been placed in the crosshair of the commercial airline industry. This ecosystem is only destroyed further by continuous expansions, leaving the birds without a habitat (the leading reason for decline in bird population). Then due to poor restructuring of the area the birds end up waiting on the tarmac for their turn. 
-</p>
+		<p>
+			Airports are legally required to manage wildlife within a five-mile radius, and yet this
+			five-mile radius is actually where birds are most in danger accounting for the vast majority
+			of colisions. In fact, over 95% of bird strikes fall into what the FAA calls the
+			“responsibility zone”. In this “Responsibility zone” the most deadly airports are killing
+			birds of over 200 unique species. That's an entire ecosystem that has been placed in the
+			crosshair of the commercial airline industry. This ecosystem is only destroyed further by
+			continuous expansions, leaving the birds without a habitat (the leading reason for decline in
+			bird population). Then due to poor restructuring of the area the birds end up waiting on the
+			tarmac for their turn.
+		</p>
 	</section>
 
 	<section class="prose prose-lg mb-4 max-w-none">

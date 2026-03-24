@@ -36,47 +36,44 @@
 				.map(([phase]) => phase)
 		);
 
-const PHASE_GROUPS: Record<string, string> = {
-    'Take-off Run': 'Takeoff',
-    'Departure':    'Takeoff',
-    'Approach':     'Landing Phase',
-    'Descent':      'Landing Phase',
-    'Landing Roll': 'Landing Phase',
-    'Taxi':         'Landing Phase',
-    'Parked':       'Landing Phase',
-    'Arrival':      'Landing Phase',
-    'Climb':        'In Flight',
-    'En Route':     'In Flight',
-};
+		const PHASE_GROUPS: Record<string, string> = {
+			'Take-off Run': 'Takeoff',
+			Departure: 'Takeoff',
+			Approach: 'Landing Phase',
+			Descent: 'Landing Phase',
+			'Landing Roll': 'Landing Phase',
+			Taxi: 'Landing Phase',
+			Parked: 'Landing Phase',
+			Arrival: 'Landing Phase',
+			Climb: 'In Flight',
+			'En Route': 'In Flight'
+		};
 
-const allPhases = ['Takeoff', 'In Flight', 'Landing Phase'];
+		const allPhases = ['Takeoff', 'In Flight', 'Landing Phase'];
 
-const normalized = data
-    .filter((d) => d.PHASE_OF_FLIGHT != null)
-    .map((d) => ({
-        ...d,
-        phase: PHASE_GROUPS[d.PHASE_OF_FLIGHT] ?? 'Other'
-    }));
+		const normalized = data
+			.filter((d) => d.PHASE_OF_FLIGHT != null)
+			.map((d) => ({
+				...d,
+				phase: PHASE_GROUPS[d.PHASE_OF_FLIGHT] ?? 'Other'
+			}));
 
-const otherRawValues = new Set(
-    data
-        .filter((d) => d.PHASE_OF_FLIGHT !== 'Unknown')
-        .filter((d) => !PHASE_GROUPS[d.PHASE_OF_FLIGHT])
-        .map((d) => d.PHASE_OF_FLIGHT)
-);
+		const otherRawValues = new Set(
+			data
+				.filter((d) => d.PHASE_OF_FLIGHT !== 'Unknown')
+				.filter((d) => !PHASE_GROUPS[d.PHASE_OF_FLIGHT])
+				.map((d) => d.PHASE_OF_FLIGHT)
+		);
 
-console.log('Raw phases mapping to Other:', [...otherRawValues]);
+		console.log('Raw phases mapping to Other:', [...otherRawValues]);
 
-const unaccounted = new Set(
-    data
-        .map((d) => d.PHASE_OF_FLIGHT)
-        .filter((p) => p && !PHASE_GROUPS[p])
-);
+		const unaccounted = new Set(
+			data.map((d) => d.PHASE_OF_FLIGHT).filter((p) => p && !PHASE_GROUPS[p])
+		);
 
-if (unaccounted.size > 0) {
-    console.warn('Unaccounted PHASE_OF_FLIGHT values:', [...unaccounted]);
-}
-
+		if (unaccounted.size > 0) {
+			console.warn('Unaccounted PHASE_OF_FLIGHT values:', [...unaccounted]);
+		}
 
 		// Build { year → { phase → count } } structure
 		const nested = d3.rollup(
@@ -99,11 +96,7 @@ if (unaccounted.size > 0) {
 		});
 
 		// --- Scales ---
-		const x = d3
-			.scaleBand()
-			.domain(years.map(String))
-			.range([0, innerWidth])
-			.padding(0.2);
+		const x = d3.scaleBand().domain(years.map(String)).range([0, innerWidth]).padding(0.2);
 
 		const stack = d3.stack<Record<string, number | string>>().keys(allPhases);
 		const series = stack(chartData as any);
@@ -112,10 +105,7 @@ if (unaccounted.size > 0) {
 
 		const y = d3.scaleLinear().domain([0, yMax]).nice().range([innerHeight, 0]);
 
-		const color = d3
-    .scaleOrdinal<string>()
-    .domain(allPhases)
-    .range(d3.schemeTableau10);
+		const color = d3.scaleOrdinal<string>().domain(allPhases).range(d3.schemeTableau10);
 
 		// --- Legend height (above chart) ---
 		const legendItemHeight = 20;
@@ -194,5 +184,7 @@ if (unaccounted.size > 0) {
 
 <figure>
 	<svg bind:this={svgEl} class="block w-full"></svg>
-	<figcaption class="mt-2 text-sm text-gray-500">Bird strikes by year, stacked by phase of flight</figcaption>
+	<figcaption class="mt-2 text-sm text-gray-500">
+		Bird strikes by year, stacked by phase of flight
+	</figcaption>
 </figure>

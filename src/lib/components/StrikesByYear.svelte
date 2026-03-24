@@ -136,8 +136,10 @@
 				const s = series.find((s) => s.key === phase)!;
 
 				g.append('line')
-					.attr('x1', 0).attr('x2', innerWidth)
-					.attr('y1', facetHeight).attr('y2', facetHeight)
+					.attr('x1', 0)
+					.attr('x2', innerWidth)
+					.attr('y1', facetHeight)
+					.attr('y2', facetHeight)
 					.attr('stroke', 'currentColor')
 					.attr('stroke-opacity', 0.2);
 
