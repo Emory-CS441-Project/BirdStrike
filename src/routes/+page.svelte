@@ -2,6 +2,7 @@
 	import InteractionHeatMap from '$lib/components/InteractionHeatMap.svelte';
 	import StrikesByYear from '$lib/components/StrikesByYear.svelte';
 	import type { PageData } from './$types';
+	import CostPlot from '$lib/components/CostPlot.svelte';
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -65,6 +66,14 @@
 
 	<div class="mb-16">
 		<InteractionHeatMap data={data.interactionData} />
+	</div>
+
+	<section class="prose prose-lg mb-16 max-w-none">
+		<p>It would also benefit the airlines to reduce the number of collisions. These collisions can force emergency landings, leading to injuries and even fatalities. They can also lead to delayed flights, or diversions. So airline companies have been working on making their planes more bird resistant, something they have had success with recently. The inflation adjusted cost of repairs due to a strike has been steadily decreasing since 2010. This has obvious benefits for humans on vacation, but now airlines have less reason to care and vacationing birds are more at risk than ever.</p>
+	</section>
+
+	<div class="mb-16">
+		<CostPlot />
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
