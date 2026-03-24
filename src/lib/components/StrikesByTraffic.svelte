@@ -77,6 +77,18 @@
 			.append('g')
 			.attr('transform', `translate(${MARGIN.left},${MARGIN.top})`);
 
+		// Grid lines
+		svg
+			.append('g')
+			.attr('stroke', 'currentColor')
+			.attr('stroke-opacity', 0.08)
+			.selectAll('line')
+			.data(y.ticks(6))
+			.join('line')
+			.attr('x1', 0)
+			.attr('x2', innerWidth)
+			.attr('y1', (d) => y(d))
+			.attr('y2', (d) => y(d));
 		svg
 			.append('g')
 			.attr('transform', `translate(0,${INNER_HEIGHT})`)
