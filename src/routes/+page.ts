@@ -4,11 +4,16 @@ import * as d3 from 'd3';
 export const prerender = true;
 
 export async function load({ fetch }) {
-	const [yearRes, interactionRes, latlonRes] = await Promise.all([
-		fetch('strikes_by_year.json'),
-		fetch('InteractionHeatMap.json'),
-		fetch('strikes_latlon.csv')
-	]);
+	const [yearRes, interactionRes, latlonRes, CostBoxRes, CostTrendRes, TrafficRes, SpeciesRes] =
+		await Promise.all([
+			fetch('strikes_by_year.json'),
+			fetch('InteractionHeatMap.json'),
+			fetch('strikes_latlon.csv'),
+			fetch('cost_by_damage.json'),
+			fetch('cost_trend.json'),
+			fetch('Traffic.json'),
+			fetch('species_strikes.json')
+		]);
 	const strikesbyYear = await yearRes.json();
 	const interactionData: InteractionData = await interactionRes.json();
 	const csvText = await latlonRes.text();
@@ -17,6 +22,9 @@ export async function load({ fetch }) {
         LONGITUDE: +row.LONGITUDE,
         INCIDENT_MONTH: row.INCIDENT_MONTH ? +row.INCIDENT_MONTH : null
     }));
-
-	return { strikesbyYear, interactionData, latlonData };
+	const CostBox = await CostBoxRes.json();
+	const CostTrend = await CostTrendRes.json();
+	const Traffic = await TrafficRes.json();
+	const speciesStrikes = await SpeciesRes.json();
+	return { strikesbyYear, interactionData, latlonData, CostBox, CostTrend, Traffic, speciesStrikes };
 }
