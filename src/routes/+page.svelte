@@ -71,7 +71,16 @@
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
-		<p>It would also benefit the airlines to reduce the number of collisions. The repairs alone are a great cost for the airlines, with struck engines costing nearly 100,000$ on average to fix. These collisions can also lead to delayed flights, or diversions, in the worst case there can even be forced emergency landings, injuries and even death. Airlines have an incentive to avoid these collisions however they have decided to make their planes more bird resistant, as opposed to reducing collisions in general. The inflation adjusted cost of repairs due to a strike has been steadily decreasing since 2010. This has obvious benefits for humans on vacation, but now airlines have less reason to care and birds are more at risk than ever.</p>
+		<p>It would also benefit the airlines to reduce the number of collisions. 
+		The repairs alone are a great cost for the airlines and have even increased in recent years, with struck engines 
+		rising above 100,000$ on average to fix. These collisions can also lead 
+		to delayed flights, or diversions, in the worst case there can even be 
+		forced emergency landings, injuries and even death. Airlines have an incentive 
+		to avoid these collisions however they have decided to make their planes more 
+		bird resistant, as opposed to reducing collisions in general. The inflation 
+		adjusted cost of repairs due to a strike has been steadily decreasing since 2010. 
+		This has obvious benefits for humans on vacation, but now airlines have less reason 
+		to care and birds are more at risk than ever.</p>
 	</section>
 
 	<div class="mb-16">
@@ -79,6 +88,13 @@
 	</div>
 
 	<section class="prose prose-lg mb-16 max-w-none">
-		<p>As technology improves and planes become more bird resistant, airlines will no longer have to weigh human safety vs. flight delays and can just plow through birds, treating them as acceptable collateral. This problem isn't unsolvable, but the airline industry as a whole has been deciding not to solve it, as seen by the widespread increase in collisions across the entire country. Delaying flights out of cautiousness and investing in better migration monitoring systems cost the airports money, while expanding runways into an already damaged ecosystem makes money. </p>
+		<p>As technology improves and planes become more bird resistant, 
+		airlines will no longer have to weigh human safety vs. flight delays 
+		and can just plow through birds, treating them as acceptable collateral. 
+		This problem isn't unsolvable, but the airline industry as a whole 
+		has been deciding not to solve it, as seen by the widespread increase 
+		in collisions across the entire country. Delaying flights out of cautiousness 
+		and investing in better migration monitoring systems cost the airports money, 
+		while expanding runways into an already damaged ecosystem makes money. </p>
 	</section>
 </main>
