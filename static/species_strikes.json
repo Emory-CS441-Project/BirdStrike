@@ -1,0 +1,4732 @@
+[
+  {
+    "species": "Unknown bird - small",
+    "incidents": 54237,
+    "est_birds_struck": 96910
+  },
+  {
+    "species": "Unknown bird - medium",
+    "incidents": 39249,
+    "est_birds_struck": 58766
+  },
+  {
+    "species": "Unknown bird",
+    "incidents": 35074,
+    "est_birds_struck": 42955
+  },
+  {
+    "species": "European starling",
+    "incidents": 6941,
+    "est_birds_struck": 37361
+  },
+  {
+    "species": "Mourning dove",
+    "incidents": 17788,
+    "est_birds_struck": 30799
+  },
+  {
+    "species": "Barn swallow",
+    "incidents": 11631,
+    "est_birds_struck": 24200
+  },
+  {
+    "species": "Gulls",
+    "incidents": 7645,
+    "est_birds_struck": 21165
+  },
+  {
+    "species": "Horned lark",
+    "incidents": 9788,
+    "est_birds_struck": 18882
+  },
+  {
+    "species": "Killdeer",
+    "incidents": 11363,
+    "est_birds_struck": 16753
+  },
+  {
+    "species": "Rock pigeon",
+    "incidents": 4732,
+    "est_birds_struck": 16337
+  },
+  {
+    "species": "American kestrel",
+    "incidents": 10402,
+    "est_birds_struck": 12679
+  },
+  {
+    "species": "Sparrows",
+    "incidents": 4393,
+    "est_birds_struck": 11109
+  },
+  {
+    "species": "Canada goose",
+    "incidents": 2277,
+    "est_birds_struck": 8413
+  },
+  {
+    "species": "Cliff swallow",
+    "incidents": 3677,
+    "est_birds_struck": 7209
+  },
+  {
+    "species": "Eastern meadowlark",
+    "incidents": 5219,
+    "est_birds_struck": 6828
+  },
+  {
+    "species": "Unknown bird - large",
+    "incidents": 3945,
+    "est_birds_struck": 6038
+  },
+  {
+    "species": "Ring-billed gull",
+    "incidents": 2482,
+    "est_birds_struck": 5516
+  },
+  {
+    "species": "Swallows",
+    "incidents": 1616,
+    "est_birds_struck": 5083
+  },
+  {
+    "species": "Red-tailed hawk",
+    "incidents": 4491,
+    "est_birds_struck": 5017
+  },
+  {
+    "species": "Blackbirds",
+    "incidents": 1348,
+    "est_birds_struck": 4947
+  },
+  {
+    "species": "Western meadowlark",
+    "incidents": 2983,
+    "est_birds_struck": 4778
+  },
+  {
+    "species": "Tree swallow",
+    "incidents": 1369,
+    "est_birds_struck": 4599
+  },
+  {
+    "species": "Bank swallow",
+    "incidents": 959,
+    "est_birds_struck": 4530
+  },
+  {
+    "species": "Snow bunting",
+    "incidents": 463,
+    "est_birds_struck": 4205
+  },
+  {
+    "species": "Doves",
+    "incidents": 1411,
+    "est_birds_struck": 3719
+  },
+  {
+    "species": "Herring gull",
+    "incidents": 2226,
+    "est_birds_struck": 3673
+  },
+  {
+    "species": "American robin",
+    "incidents": 2662,
+    "est_birds_struck": 3546
+  },
+  {
+    "species": "Microbats",
+    "incidents": 1847,
+    "est_birds_struck": 3334
+  },
+  {
+    "species": "Mallard",
+    "incidents": 1534,
+    "est_birds_struck": 3277
+  },
+  {
+    "species": "Western sandpiper",
+    "incidents": 345,
+    "est_birds_struck": 3269
+  },
+  {
+    "species": "Pacific golden-plover",
+    "incidents": 1611,
+    "est_birds_struck": 3004
+  },
+  {
+    "species": "Chimney swift",
+    "incidents": 2026,
+    "est_birds_struck": 2745
+  },
+  {
+    "species": "Brazilian free-tailed bat",
+    "incidents": 1724,
+    "est_birds_struck": 2571
+  },
+  {
+    "species": "Perching birds (y)",
+    "incidents": 1854,
+    "est_birds_struck": 2567
+  },
+  {
+    "species": "Ducks",
+    "incidents": 977,
+    "est_birds_struck": 2543
+  },
+  {
+    "species": "American barn owl",
+    "incidents": 2346,
+    "est_birds_struck": 2486
+  },
+  {
+    "species": "Western cattle egret",
+    "incidents": 1105,
+    "est_birds_struck": 2309
+  },
+  {
+    "species": "Savannah sparrow",
+    "incidents": 1827,
+    "est_birds_struck": 2277
+  },
+  {
+    "species": "Red-winged blackbird",
+    "incidents": 902,
+    "est_birds_struck": 2230
+  },
+  {
+    "species": "Laughing gull",
+    "incidents": 1348,
+    "est_birds_struck": 2161
+  },
+  {
+    "species": "Hawks",
+    "incidents": 1734,
+    "est_birds_struck": 1962
+  },
+  {
+    "species": "Brown-headed cowbird",
+    "incidents": 554,
+    "est_birds_struck": 1932
+  },
+  {
+    "species": "Sandpipers, curlews, phalaropes, allies",
+    "incidents": 418,
+    "est_birds_struck": 1909
+  },
+  {
+    "species": "Common nighthawk",
+    "incidents": 1527,
+    "est_birds_struck": 1812
+  },
+  {
+    "species": "White-tailed deer",
+    "incidents": 1380,
+    "est_birds_struck": 1762
+  },
+  {
+    "species": "Turkey vulture",
+    "incidents": 1315,
+    "est_birds_struck": 1682
+  },
+  {
+    "species": "Cedar waxwing",
+    "incidents": 725,
+    "est_birds_struck": 1563
+  },
+  {
+    "species": "Franklin's gull",
+    "incidents": 292,
+    "est_birds_struck": 1549
+  },
+  {
+    "species": "Common grackle",
+    "incidents": 407,
+    "est_birds_struck": 1541
+  },
+  {
+    "species": "Least sandpiper",
+    "incidents": 349,
+    "est_birds_struck": 1426
+  },
+  {
+    "species": "Geese",
+    "incidents": 494,
+    "est_birds_struck": 1379
+  },
+  {
+    "species": "Dunlin",
+    "incidents": 173,
+    "est_birds_struck": 1371
+  },
+  {
+    "species": "Swainson's thrush",
+    "incidents": 888,
+    "est_birds_struck": 1361
+  },
+  {
+    "species": "Meadowlarks",
+    "incidents": 935,
+    "est_birds_struck": 1354
+  },
+  {
+    "species": "Purple martin",
+    "incidents": 454,
+    "est_birds_struck": 1212
+  },
+  {
+    "species": "American crow",
+    "incidents": 789,
+    "est_birds_struck": 1159
+  },
+  {
+    "species": "Snow goose",
+    "incidents": 203,
+    "est_birds_struck": 1134
+  },
+  {
+    "species": "Yellow-rumped warbler",
+    "incidents": 901,
+    "est_birds_struck": 1121
+  },
+  {
+    "species": "Short-eared owl",
+    "incidents": 1050,
+    "est_birds_struck": 1105
+  },
+  {
+    "species": "House sparrow",
+    "incidents": 667,
+    "est_birds_struck": 1090
+  },
+  {
+    "species": "Semipalmated sandpiper",
+    "incidents": 229,
+    "est_birds_struck": 1050
+  },
+  {
+    "species": "Eastern red bat",
+    "incidents": 871,
+    "est_birds_struck": 1041
+  },
+  {
+    "species": "White-throated sparrow",
+    "incidents": 737,
+    "est_birds_struck": 1032
+  },
+  {
+    "species": "American pipit",
+    "incidents": 523,
+    "est_birds_struck": 1021
+  },
+  {
+    "species": "Egrets",
+    "incidents": 404,
+    "est_birds_struck": 971
+  },
+  {
+    "species": "Striped skunk",
+    "incidents": 899,
+    "est_birds_struck": 952
+  },
+  {
+    "species": "Northern pintail",
+    "incidents": 292,
+    "est_birds_struck": 950
+  },
+  {
+    "species": "Coyote",
+    "incidents": 978,
+    "est_birds_struck": 881
+  },
+  {
+    "species": "Western kingbird",
+    "incidents": 665,
+    "est_birds_struck": 880
+  },
+  {
+    "species": "Upland sandpiper",
+    "incidents": 469,
+    "est_birds_struck": 851
+  },
+  {
+    "species": "Peregrine falcon",
+    "incidents": 694,
+    "est_birds_struck": 844
+  },
+  {
+    "species": "Hermit thrush",
+    "incidents": 569,
+    "est_birds_struck": 828
+  },
+  {
+    "species": "White-headed gull complex",
+    "incidents": 473,
+    "est_birds_struck": 805
+  },
+  {
+    "species": "American golden-plover",
+    "incidents": 360,
+    "est_birds_struck": 799
+  },
+  {
+    "species": "Gray catbird",
+    "incidents": 599,
+    "est_birds_struck": 794
+  },
+  {
+    "species": "Zebra dove",
+    "incidents": 543,
+    "est_birds_struck": 783
+  },
+  {
+    "species": "Osprey",
+    "incidents": 733,
+    "est_birds_struck": 777
+  },
+  {
+    "species": "Dark-eyed junco",
+    "incidents": 529,
+    "est_birds_struck": 757
+  },
+  {
+    "species": "Bald eagle",
+    "incidents": 591,
+    "est_birds_struck": 745
+  },
+  {
+    "species": "Semipalmated plover",
+    "incidents": 178,
+    "est_birds_struck": 738
+  },
+  {
+    "species": "Song sparrow",
+    "incidents": 560,
+    "est_birds_struck": 715
+  },
+  {
+    "species": "Great blue heron",
+    "incidents": 664,
+    "est_birds_struck": 714
+  },
+  {
+    "species": "Scaly-breasted munia",
+    "incidents": 160,
+    "est_birds_struck": 696
+  },
+  {
+    "species": "Red-eyed vireo",
+    "incidents": 537,
+    "est_birds_struck": 672
+  },
+  {
+    "species": "Little brown bat",
+    "incidents": 508,
+    "est_birds_struck": 648
+  },
+  {
+    "species": "California gull",
+    "incidents": 365,
+    "est_birds_struck": 639
+  },
+  {
+    "species": "Lapland longspur",
+    "incidents": 177,
+    "est_birds_struck": 632
+  },
+  {
+    "species": "Virginia opossum",
+    "incidents": 532,
+    "est_birds_struck": 621
+  },
+  {
+    "species": "Ducks, geese, swans",
+    "incidents": 154,
+    "est_birds_struck": 606
+  },
+  {
+    "species": "Black-tailed jackrabbit",
+    "incidents": 579,
+    "est_birds_struck": 599
+  },
+  {
+    "species": "American coot",
+    "incidents": 499,
+    "est_birds_struck": 594
+  },
+  {
+    "species": "Scissor-tailed flycatcher",
+    "incidents": 468,
+    "est_birds_struck": 593
+  },
+  {
+    "species": "Common yellowthroat",
+    "incidents": 399,
+    "est_birds_struck": 588
+  },
+  {
+    "species": "Burrowing owl",
+    "incidents": 532,
+    "est_birds_struck": 582
+  },
+  {
+    "species": "New World vultures",
+    "incidents": 425,
+    "est_birds_struck": 574
+  },
+  {
+    "species": "Black-bellied plover",
+    "incidents": 307,
+    "est_birds_struck": 570
+  },
+  {
+    "species": "Double-crested cormorant",
+    "incidents": 268,
+    "est_birds_struck": 537
+  },
+  {
+    "species": "Ruby-crowned kinglet",
+    "incidents": 427,
+    "est_birds_struck": 522
+  },
+  {
+    "species": "Grackles",
+    "incidents": 196,
+    "est_birds_struck": 518
+  },
+  {
+    "species": "Sandhill crane",
+    "incidents": 221,
+    "est_birds_struck": 508
+  },
+  {
+    "species": "Black vulture",
+    "incidents": 415,
+    "est_birds_struck": 505
+  },
+  {
+    "species": "Northern shoveler",
+    "incidents": 162,
+    "est_birds_struck": 500
+  },
+  {
+    "species": "Big brown bat",
+    "incidents": 395,
+    "est_birds_struck": 500
+  },
+  {
+    "species": "American wigeon",
+    "incidents": 140,
+    "est_birds_struck": 472
+  },
+  {
+    "species": "Great horned owl",
+    "incidents": 461,
+    "est_birds_struck": 471
+  },
+  {
+    "species": "Unknown bird or bat",
+    "incidents": 415,
+    "est_birds_struck": 470
+  },
+  {
+    "species": "Owls",
+    "incidents": 419,
+    "est_birds_struck": 463
+  },
+  {
+    "species": "Ovenbird",
+    "incidents": 354,
+    "est_birds_struck": 459
+  },
+  {
+    "species": "House finch",
+    "incidents": 313,
+    "est_birds_struck": 433
+  },
+  {
+    "species": "Vesper bats",
+    "incidents": 370,
+    "est_birds_struck": 430
+  },
+  {
+    "species": "Crows",
+    "incidents": 247,
+    "est_birds_struck": 417
+  },
+  {
+    "species": "Spotted dove",
+    "incidents": 293,
+    "est_birds_struck": 412
+  },
+  {
+    "species": "Snowy owl",
+    "incidents": 396,
+    "est_birds_struck": 409
+  },
+  {
+    "species": "Wilson's snipe",
+    "incidents": 311,
+    "est_birds_struck": 396
+  },
+  {
+    "species": "Finches, euphonias",
+    "incidents": 152,
+    "est_birds_struck": 395
+  },
+  {
+    "species": "Great black-backed gull",
+    "incidents": 210,
+    "est_birds_struck": 393
+  },
+  {
+    "species": "Gadwall",
+    "incidents": 154,
+    "est_birds_struck": 384
+  },
+  {
+    "species": "Greater white-fronted goose",
+    "incidents": 108,
+    "est_birds_struck": 377
+  },
+  {
+    "species": "Green-winged teal",
+    "incidents": 175,
+    "est_birds_struck": 375
+  },
+  {
+    "species": "Glaucous-winged gull",
+    "incidents": 240,
+    "est_birds_struck": 365
+  },
+  {
+    "species": "Chipping sparrow",
+    "incidents": 288,
+    "est_birds_struck": 358
+  },
+  {
+    "species": "American redstart",
+    "incidents": 234,
+    "est_birds_struck": 358
+  },
+  {
+    "species": "Common myna",
+    "incidents": 167,
+    "est_birds_struck": 352
+  },
+  {
+    "species": "Blue-winged teal",
+    "incidents": 118,
+    "est_birds_struck": 351
+  },
+  {
+    "species": "Plovers",
+    "incidents": 116,
+    "est_birds_struck": 348
+  },
+  {
+    "species": "Lark bunting",
+    "incidents": 176,
+    "est_birds_struck": 340
+  },
+  {
+    "species": "Yellow warbler",
+    "incidents": 228,
+    "est_birds_struck": 337
+  },
+  {
+    "species": "Merlin",
+    "incidents": 277,
+    "est_birds_struck": 337
+  },
+  {
+    "species": "Western gull",
+    "incidents": 240,
+    "est_birds_struck": 330
+  },
+  {
+    "species": "Hoary bat",
+    "incidents": 283,
+    "est_birds_struck": 328
+  },
+  {
+    "species": "White-winged dove",
+    "incidents": 198,
+    "est_birds_struck": 327
+  },
+  {
+    "species": "Lincoln's sparrow",
+    "incidents": 250,
+    "est_birds_struck": 310
+  },
+  {
+    "species": "Swainson's hawk",
+    "incidents": 274,
+    "est_birds_struck": 309
+  },
+  {
+    "species": "Swamp sparrow",
+    "incidents": 254,
+    "est_birds_struck": 309
+  },
+  {
+    "species": "American woodcock",
+    "incidents": 267,
+    "est_birds_struck": 307
+  },
+  {
+    "species": "White-tailed jackrabbit",
+    "incidents": 284,
+    "est_birds_struck": 299
+  },
+  {
+    "species": "Red fox",
+    "incidents": 318,
+    "est_birds_struck": 298
+  },
+  {
+    "species": "Northern mockingbird",
+    "incidents": 232,
+    "est_birds_struck": 297
+  },
+  {
+    "species": "Bonaparte's gull",
+    "incidents": 95,
+    "est_birds_struck": 293
+  },
+  {
+    "species": "Wilson's warbler",
+    "incidents": 252,
+    "est_birds_struck": 292
+  },
+  {
+    "species": "Lesser scaup",
+    "incidents": 112,
+    "est_birds_struck": 292
+  },
+  {
+    "species": "Blackpoll warbler",
+    "incidents": 210,
+    "est_birds_struck": 290
+  },
+  {
+    "species": "Yellow-bellied sapsucker",
+    "incidents": 214,
+    "est_birds_struck": 284
+  },
+  {
+    "species": "Chestnut munia",
+    "incidents": 95,
+    "est_birds_struck": 280
+  },
+  {
+    "species": "Brewer's blackbird",
+    "incidents": 112,
+    "est_birds_struck": 280
+  },
+  {
+    "species": "Yellow bittern",
+    "incidents": 188,
+    "est_birds_struck": 278
+  },
+  {
+    "species": "Wild turkey",
+    "incidents": 139,
+    "est_birds_struck": 276
+  },
+  {
+    "species": "Great egret",
+    "incidents": 195,
+    "est_birds_struck": 275
+  },
+  {
+    "species": "Palm warbler",
+    "incidents": 233,
+    "est_birds_struck": 273
+  },
+  {
+    "species": "Snow goose/Ross's goose complex",
+    "incidents": 42,
+    "est_birds_struck": 270
+  },
+  {
+    "species": "Cooper's hawk",
+    "incidents": 247,
+    "est_birds_struck": 262
+  },
+  {
+    "species": "Northern harrier",
+    "incidents": 241,
+    "est_birds_struck": 261
+  },
+  {
+    "species": "Northern flicker",
+    "incidents": 246,
+    "est_birds_struck": 261
+  },
+  {
+    "species": "Wilson's phalarope",
+    "incidents": 38,
+    "est_birds_struck": 251
+  },
+  {
+    "species": "Eastern cottontail",
+    "incidents": 240,
+    "est_birds_struck": 250
+  },
+  {
+    "species": "Raccoon",
+    "incidents": 206,
+    "est_birds_struck": 249
+  },
+  {
+    "species": "Tennessee warbler",
+    "incidents": 187,
+    "est_birds_struck": 247
+  },
+  {
+    "species": "American goldfinch",
+    "incidents": 205,
+    "est_birds_struck": 245
+  },
+  {
+    "species": "Grasshopper sparrow",
+    "incidents": 202,
+    "est_birds_struck": 242
+  },
+  {
+    "species": "Terns, noddies",
+    "incidents": 57,
+    "est_birds_struck": 240
+  },
+  {
+    "species": "Brant",
+    "incidents": 75,
+    "est_birds_struck": 234
+  },
+  {
+    "species": "Northern rough-winged swallow",
+    "incidents": 181,
+    "est_birds_struck": 231
+  },
+  {
+    "species": "Indigo bunting",
+    "incidents": 116,
+    "est_birds_struck": 230
+  },
+  {
+    "species": "Free-tailed bats",
+    "incidents": 205,
+    "est_birds_struck": 230
+  },
+  {
+    "species": "Black-crowned night heron",
+    "incidents": 184,
+    "est_birds_struck": 229
+  },
+  {
+    "species": "Wood duck",
+    "incidents": 132,
+    "est_birds_struck": 227
+  },
+  {
+    "species": "Ruddy duck",
+    "incidents": 132,
+    "est_birds_struck": 227
+  },
+  {
+    "species": "Great-tailed grackle",
+    "incidents": 113,
+    "est_birds_struck": 227
+  },
+  {
+    "species": "Cave swallow",
+    "incidents": 109,
+    "est_birds_struck": 224
+  },
+  {
+    "species": "Eurasian skylark",
+    "incidents": 177,
+    "est_birds_struck": 222
+  },
+  {
+    "species": "American black duck",
+    "incidents": 102,
+    "est_birds_struck": 222
+  },
+  {
+    "species": "Yellow-billed cuckoo",
+    "incidents": 166,
+    "est_birds_struck": 216
+  },
+  {
+    "species": "New World wood-warblers",
+    "incidents": 166,
+    "est_birds_struck": 216
+  },
+  {
+    "species": "Short-billed gull",
+    "incidents": 92,
+    "est_birds_struck": 216
+  },
+  {
+    "species": "Sora",
+    "incidents": 175,
+    "est_birds_struck": 215
+  },
+  {
+    "species": "Woodchuck",
+    "incidents": 220,
+    "est_birds_struck": 214
+  },
+  {
+    "species": "White-/golden-crown sparrow complex",
+    "incidents": 174,
+    "est_birds_struck": 214
+  },
+  {
+    "species": "Buff-breasted sandpiper",
+    "incidents": 99,
+    "est_birds_struck": 213
+  },
+  {
+    "species": "Baird's sandpiper",
+    "incidents": 93,
+    "est_birds_struck": 212
+  },
+  {
+    "species": "Yellow-crowned night heron",
+    "incidents": 165,
+    "est_birds_struck": 210
+  },
+  {
+    "species": "Anhinga",
+    "incidents": 88,
+    "est_birds_struck": 207
+  },
+  {
+    "species": "Vesper sparrow",
+    "incidents": 160,
+    "est_birds_struck": 205
+  },
+  {
+    "species": "Varied thrush",
+    "incidents": 149,
+    "est_birds_struck": 204
+  },
+  {
+    "species": "Pectoral sandpiper",
+    "incidents": 87,
+    "est_birds_struck": 202
+  },
+  {
+    "species": "Mountain bluebird",
+    "incidents": 117,
+    "est_birds_struck": 202
+  },
+  {
+    "species": "Silver-haired bat",
+    "incidents": 165,
+    "est_birds_struck": 200
+  },
+  {
+    "species": "White-crowned sparrow",
+    "incidents": 152,
+    "est_birds_struck": 197
+  },
+  {
+    "species": "Bay-breasted warbler",
+    "incidents": 103,
+    "est_birds_struck": 197
+  },
+  {
+    "species": "Fox sparrow",
+    "incidents": 156,
+    "est_birds_struck": 196
+  },
+  {
+    "species": "Eastern kingbird",
+    "incidents": 136,
+    "est_birds_struck": 196
+  },
+  {
+    "species": "Eurasian collared dove",
+    "incidents": 119,
+    "est_birds_struck": 194
+  },
+  {
+    "species": "Ring-necked pheasant",
+    "incidents": 114,
+    "est_birds_struck": 193
+  },
+  {
+    "species": "Northern house wren",
+    "incidents": 134,
+    "est_birds_struck": 189
+  },
+  {
+    "species": "Sanderling",
+    "incidents": 65,
+    "est_birds_struck": 189
+  },
+  {
+    "species": "Wood thrush",
+    "incidents": 130,
+    "est_birds_struck": 185
+  },
+  {
+    "species": "White-throated swift",
+    "incidents": 158,
+    "est_birds_struck": 183
+  },
+  {
+    "species": "Black-and-white warbler",
+    "incidents": 140,
+    "est_birds_struck": 180
+  },
+  {
+    "species": "Shorebirds",
+    "incidents": 63,
+    "est_birds_struck": 177
+  },
+  {
+    "species": "Munias",
+    "incidents": 119,
+    "est_birds_struck": 174
+  },
+  {
+    "species": "Pine siskin",
+    "incidents": 60,
+    "est_birds_struck": 174
+  },
+  {
+    "species": "Bobolink",
+    "incidents": 78,
+    "est_birds_struck": 172
+  },
+  {
+    "species": "Boat-tailed grackle",
+    "incidents": 110,
+    "est_birds_struck": 170
+  },
+  {
+    "species": "Brown pelican",
+    "incidents": 106,
+    "est_birds_struck": 169
+  },
+  {
+    "species": "Orange-crowned warbler",
+    "incidents": 142,
+    "est_birds_struck": 167
+  },
+  {
+    "species": "Pigeons, doves",
+    "incidents": 77,
+    "est_birds_struck": 167
+  },
+  {
+    "species": "Turtles",
+    "incidents": 168,
+    "est_birds_struck": 167
+  },
+  {
+    "species": "White-rumped sandpiper",
+    "incidents": 28,
+    "est_birds_struck": 166
+  },
+  {
+    "species": "Evening bat",
+    "incidents": 134,
+    "est_birds_struck": 164
+  },
+  {
+    "species": "Western tanager",
+    "incidents": 129,
+    "est_birds_struck": 164
+  },
+  {
+    "species": "Veery",
+    "incidents": 126,
+    "est_birds_struck": 161
+  },
+  {
+    "species": "Golden-crowned kinglet",
+    "incidents": 138,
+    "est_birds_struck": 158
+  },
+  {
+    "species": "Red-shouldered hawk",
+    "incidents": 148,
+    "est_birds_struck": 153
+  },
+  {
+    "species": "Nashville warbler",
+    "incidents": 115,
+    "est_birds_struck": 150
+  },
+  {
+    "species": "Blue-gray gnatcatcher",
+    "incidents": 121,
+    "est_birds_struck": 146
+  },
+  {
+    "species": "Magnolia warbler",
+    "incidents": 105,
+    "est_birds_struck": 145
+  },
+  {
+    "species": "Northern waterthrush",
+    "incidents": 110,
+    "est_birds_struck": 145
+  },
+  {
+    "species": "Rough-legged hawk",
+    "incidents": 140,
+    "est_birds_struck": 144
+  },
+  {
+    "species": "Common raven",
+    "incidents": 98,
+    "est_birds_struck": 143
+  },
+  {
+    "species": "Lark sparrow",
+    "incidents": 82,
+    "est_birds_struck": 142
+  },
+  {
+    "species": "Gray-cheeked thrush",
+    "incidents": 102,
+    "est_birds_struck": 142
+  },
+  {
+    "species": "Scarlet tanager",
+    "incidents": 111,
+    "est_birds_struck": 141
+  },
+  {
+    "species": "American white pelican",
+    "incidents": 37,
+    "est_birds_struck": 141
+  },
+  {
+    "species": "Gopher snake",
+    "incidents": 137,
+    "est_birds_struck": 137
+  },
+  {
+    "species": "Black-throated blue warbler",
+    "incidents": 107,
+    "est_birds_struck": 137
+  },
+  {
+    "species": "Wrens",
+    "incidents": 80,
+    "est_birds_struck": 135
+  },
+  {
+    "species": "Ring-necked duck",
+    "incidents": 65,
+    "est_birds_struck": 135
+  },
+  {
+    "species": "Diamondback terrapin",
+    "incidents": 95,
+    "est_birds_struck": 135
+  },
+  {
+    "species": "Northern parula",
+    "incidents": 118,
+    "est_birds_struck": 133
+  },
+  {
+    "species": "Field sparrow",
+    "incidents": 97,
+    "est_birds_struck": 132
+  },
+  {
+    "species": "Western flycatcher",
+    "incidents": 110,
+    "est_birds_struck": 130
+  },
+  {
+    "species": "White-faced ibis",
+    "incidents": 28,
+    "est_birds_struck": 127
+  },
+  {
+    "species": "Band-tailed pigeon",
+    "incidents": 43,
+    "est_birds_struck": 127
+  },
+  {
+    "species": "Gray partridge",
+    "incidents": 46,
+    "est_birds_struck": 126
+  },
+  {
+    "species": "Hudsonian godwit",
+    "incidents": 8,
+    "est_birds_struck": 126
+  },
+  {
+    "species": "Common tern",
+    "incidents": 61,
+    "est_birds_struck": 125
+  },
+  {
+    "species": "Spotted sandpiper",
+    "incidents": 69,
+    "est_birds_struck": 124
+  },
+  {
+    "species": "Desert cottontail",
+    "incidents": 114,
+    "est_birds_struck": 124
+  },
+  {
+    "species": "Eastern wood-pewee",
+    "incidents": 91,
+    "est_birds_struck": 121
+  },
+  {
+    "species": "Greater sage-grouse",
+    "incidents": 42,
+    "est_birds_struck": 117
+  },
+  {
+    "species": "Rose-breasted grosbeak",
+    "incidents": 77,
+    "est_birds_struck": 117
+  },
+  {
+    "species": "White-tailed kite",
+    "incidents": 106,
+    "est_birds_struck": 116
+  },
+  {
+    "species": "Mallard/American black duck complex",
+    "incidents": 60,
+    "est_birds_struck": 115
+  },
+  {
+    "species": "Black-tailed prairie dog",
+    "incidents": 104,
+    "est_birds_struck": 114
+  },
+  {
+    "species": "Warbling vireo",
+    "incidents": 99,
+    "est_birds_struck": 114
+  },
+  {
+    "species": "Cackling goose",
+    "incidents": 49,
+    "est_birds_struck": 114
+  },
+  {
+    "species": "Short-billed dowitcher",
+    "incidents": 29,
+    "est_birds_struck": 113
+  },
+  {
+    "species": "Eastern phoebe",
+    "incidents": 87,
+    "est_birds_struck": 112
+  },
+  {
+    "species": "Loggerhead shrike",
+    "incidents": 97,
+    "est_birds_struck": 112
+  },
+  {
+    "species": "Blackburnian warbler",
+    "incidents": 61,
+    "est_birds_struck": 111
+  },
+  {
+    "species": "Mule deer",
+    "incidents": 93,
+    "est_birds_struck": 107
+  },
+  {
+    "species": "Vaux's swift",
+    "incidents": 97,
+    "est_birds_struck": 107
+  },
+  {
+    "species": "Falcons, kestrels, falconets",
+    "incidents": 77,
+    "est_birds_struck": 107
+  },
+  {
+    "species": "Chestnut-sided warbler",
+    "incidents": 66,
+    "est_birds_struck": 106
+  },
+  {
+    "species": "Dickcissel",
+    "incidents": 64,
+    "est_birds_struck": 104
+  },
+  {
+    "species": "Yellow-headed blackbird",
+    "incidents": 40,
+    "est_birds_struck": 104
+  },
+  {
+    "species": "Broad-winged hawk",
+    "incidents": 68,
+    "est_birds_struck": 103
+  },
+  {
+    "species": "Alder/willow flycatcher complex",
+    "incidents": 88,
+    "est_birds_struck": 98
+  },
+  {
+    "species": "Ruby-throated hummingbird",
+    "incidents": 88,
+    "est_birds_struck": 98
+  },
+  {
+    "species": "Yellow-throated warbler",
+    "incidents": 66,
+    "est_birds_struck": 96
+  },
+  {
+    "species": "Pigeons",
+    "incidents": 35,
+    "est_birds_struck": 95
+  },
+  {
+    "species": "Raptors: Hawks, eagles, vultures, kites, osprey, falcons, caracaras",
+    "incidents": 89,
+    "est_birds_struck": 94
+  },
+  {
+    "species": "Yellow-breasted chat",
+    "incidents": 84,
+    "est_birds_struck": 94
+  },
+  {
+    "species": "Brewer's sparrow",
+    "incidents": 66,
+    "est_birds_struck": 91
+  },
+  {
+    "species": "Rabbits",
+    "incidents": 81,
+    "est_birds_struck": 90
+  },
+  {
+    "species": "Violet-green swallow",
+    "incidents": 65,
+    "est_birds_struck": 90
+  },
+  {
+    "species": "Tyrant (New World) flycatchers",
+    "incidents": 60,
+    "est_birds_struck": 90
+  },
+  {
+    "species": "Thrushes",
+    "incidents": 69,
+    "est_birds_struck": 89
+  },
+  {
+    "species": "Baltimore oriole",
+    "incidents": 64,
+    "est_birds_struck": 89
+  },
+  {
+    "species": "Least flycatcher",
+    "incidents": 73,
+    "est_birds_struck": 88
+  },
+  {
+    "species": "Glaucous gull",
+    "incidents": 48,
+    "est_birds_struck": 88
+  },
+  {
+    "species": "Western grebe",
+    "incidents": 43,
+    "est_birds_struck": 88
+  },
+  {
+    "species": "Snowy egret",
+    "incidents": 68,
+    "est_birds_struck": 88
+  },
+  {
+    "species": "American oystercatcher",
+    "incidents": 57,
+    "est_birds_struck": 87
+  },
+  {
+    "species": "Tundra swan",
+    "incidents": 26,
+    "est_birds_struck": 86
+  },
+  {
+    "species": "Black-throated green warbler",
+    "incidents": 81,
+    "est_birds_struck": 86
+  },
+  {
+    "species": "Canvasback",
+    "incidents": 36,
+    "est_birds_struck": 86
+  },
+  {
+    "species": "Diving duck (Aythya)",
+    "incidents": 40,
+    "est_birds_struck": 85
+  },
+  {
+    "species": "Cape May warbler",
+    "incidents": 73,
+    "est_birds_struck": 83
+  },
+  {
+    "species": "Marsh wren",
+    "incidents": 68,
+    "est_birds_struck": 83
+  },
+  {
+    "species": "Lesser yellowlegs",
+    "incidents": 36,
+    "est_birds_struck": 81
+  },
+  {
+    "species": "Ruddy turnstone",
+    "incidents": 46,
+    "est_birds_struck": 81
+  },
+  {
+    "species": "Whimbrel",
+    "incidents": 35,
+    "est_birds_struck": 80
+  },
+  {
+    "species": "Herons",
+    "incidents": 70,
+    "est_birds_struck": 80
+  },
+  {
+    "species": "Mottled duck",
+    "incidents": 41,
+    "est_birds_struck": 80
+  },
+  {
+    "species": "Great crested flycatcher",
+    "incidents": 64,
+    "est_birds_struck": 79
+  },
+  {
+    "species": "Black tern",
+    "incidents": 15,
+    "est_birds_struck": 78
+  },
+  {
+    "species": "Caspian tern",
+    "incidents": 63,
+    "est_birds_struck": 78
+  },
+  {
+    "species": "Black-bellied whistling-duck",
+    "incidents": 32,
+    "est_birds_struck": 77
+  },
+  {
+    "species": "Black noddy",
+    "incidents": 32,
+    "est_birds_struck": 76
+  },
+  {
+    "species": "Western/Clark's grebe complex",
+    "incidents": 36,
+    "est_birds_struck": 76
+  },
+  {
+    "species": "Ferruginous hawk",
+    "incidents": 76,
+    "est_birds_struck": 76
+  },
+  {
+    "species": "Sharp-shinned hawk",
+    "incidents": 70,
+    "est_birds_struck": 75
+  },
+  {
+    "species": "Crested caracara",
+    "incidents": 44,
+    "est_birds_struck": 74
+  },
+  {
+    "species": "Bonin petrel",
+    "incidents": 29,
+    "est_birds_struck": 74
+  },
+  {
+    "species": "White ibis",
+    "incidents": 48,
+    "est_birds_struck": 73
+  },
+  {
+    "species": "Eastern towhee",
+    "incidents": 58,
+    "est_birds_struck": 73
+  },
+  {
+    "species": "Pied-billed grebe",
+    "incidents": 68,
+    "est_birds_struck": 73
+  },
+  {
+    "species": "Snowy plover",
+    "incidents": 8,
+    "est_birds_struck": 72
+  },
+  {
+    "species": "Rails",
+    "incidents": 17,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Common ground dove",
+    "incidents": 71,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Brown thrasher",
+    "incidents": 66,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Bufflehead",
+    "incidents": 46,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Red-masked parakeet",
+    "incidents": 7,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Least tern",
+    "incidents": 46,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Blue jay",
+    "incidents": 61,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Pine warbler",
+    "incidents": 61,
+    "est_birds_struck": 71
+  },
+  {
+    "species": "Common snapping turtle",
+    "incidents": 72,
+    "est_birds_struck": 70
+  },
+  {
+    "species": "Cuckoos",
+    "incidents": 45,
+    "est_birds_struck": 70
+  },
+  {
+    "species": "Yellow-bellied flycatcher",
+    "incidents": 54,
+    "est_birds_struck": 69
+  },
+  {
+    "species": "Green heron",
+    "incidents": 63,
+    "est_birds_struck": 68
+  },
+  {
+    "species": "Lesser black-backed gull",
+    "incidents": 9,
+    "est_birds_struck": 68
+  },
+  {
+    "species": "Eared grebe",
+    "incidents": 38,
+    "est_birds_struck": 68
+  },
+  {
+    "species": "Nine-banded armadillo",
+    "incidents": 68,
+    "est_birds_struck": 68
+  },
+  {
+    "species": "Painted turtle",
+    "incidents": 68,
+    "est_birds_struck": 68
+  },
+  {
+    "species": "Redhead",
+    "incidents": 23,
+    "est_birds_struck": 68
+  },
+  {
+    "species": "Yellow-legged gull",
+    "incidents": 3,
+    "est_birds_struck": 67
+  },
+  {
+    "species": "Virginia rail",
+    "incidents": 61,
+    "est_birds_struck": 66
+  },
+  {
+    "species": "Greater yellowlegs",
+    "incidents": 46,
+    "est_birds_struck": 66
+  },
+  {
+    "species": "American tree sparrow",
+    "incidents": 55,
+    "est_birds_struck": 65
+  },
+  {
+    "species": "Lesser nighthawk",
+    "incidents": 50,
+    "est_birds_struck": 65
+  },
+  {
+    "species": "Black skimmer",
+    "incidents": 39,
+    "est_birds_struck": 64
+  },
+  {
+    "species": "Black-headed grosbeak",
+    "incidents": 52,
+    "est_birds_struck": 62
+  },
+  {
+    "species": "Sharp-tailed grouse",
+    "incidents": 37,
+    "est_birds_struck": 62
+  },
+  {
+    "species": "Blue-headed vireo",
+    "incidents": 52,
+    "est_birds_struck": 62
+  },
+  {
+    "species": "Barred owl",
+    "incidents": 62,
+    "est_birds_struck": 62
+  },
+  {
+    "species": "Common waxbill",
+    "incidents": 20,
+    "est_birds_struck": 60
+  },
+  {
+    "species": "Black-capped chickadee",
+    "incidents": 30,
+    "est_birds_struck": 60
+  },
+  {
+    "species": "Common loon",
+    "incidents": 59,
+    "est_birds_struck": 59
+  },
+  {
+    "species": "Black-billed magpie",
+    "incidents": 43,
+    "est_birds_struck": 58
+  },
+  {
+    "species": "Gopher tortoise",
+    "incidents": 58,
+    "est_birds_struck": 57
+  },
+  {
+    "species": "Red-necked phalarope",
+    "incidents": 27,
+    "est_birds_struck": 57
+  },
+  {
+    "species": "Java sparrow",
+    "incidents": 2,
+    "est_birds_struck": 56
+  },
+  {
+    "species": "Green iguana",
+    "incidents": 61,
+    "est_birds_struck": 56
+  },
+  {
+    "species": "Longspurs, snow buntings",
+    "incidents": 2,
+    "est_birds_struck": 56
+  },
+  {
+    "species": "Prairie falcon",
+    "incidents": 46,
+    "est_birds_struck": 56
+  },
+  {
+    "species": "Gray kingbird",
+    "incidents": 40,
+    "est_birds_struck": 55
+  },
+  {
+    "species": "Hooded merganser",
+    "incidents": 29,
+    "est_birds_struck": 54
+  },
+  {
+    "species": "Wood stork",
+    "incidents": 34,
+    "est_birds_struck": 54
+  },
+  {
+    "species": "Muskrat",
+    "incidents": 53,
+    "est_birds_struck": 53
+  },
+  {
+    "species": "White tern",
+    "incidents": 38,
+    "est_birds_struck": 53
+  },
+  {
+    "species": "Black drongo",
+    "incidents": 27,
+    "est_birds_struck": 52
+  },
+  {
+    "species": "Northern yellow bat",
+    "incidents": 27,
+    "est_birds_struck": 52
+  },
+  {
+    "species": "Golden eagle",
+    "incidents": 41,
+    "est_birds_struck": 51
+  },
+  {
+    "species": "Domestic/feral cat",
+    "incidents": 52,
+    "est_birds_struck": 51
+  },
+  {
+    "species": "Seminole bat",
+    "incidents": 46,
+    "est_birds_struck": 51
+  },
+  {
+    "species": "Black-necked stilt",
+    "incidents": 26,
+    "est_birds_struck": 51
+  },
+  {
+    "species": "Greater scaup",
+    "incidents": 25,
+    "est_birds_struck": 50
+  },
+  {
+    "species": "Townsend's warbler",
+    "incidents": 40,
+    "est_birds_struck": 50
+  },
+  {
+    "species": "Hawaiian goose",
+    "incidents": 14,
+    "est_birds_struck": 49
+  },
+  {
+    "species": "Eastern bluebird",
+    "incidents": 39,
+    "est_birds_struck": 49
+  },
+  {
+    "species": "Tri-colored bat",
+    "incidents": 49,
+    "est_birds_struck": 49
+  },
+  {
+    "species": "Purple finch",
+    "incidents": 33,
+    "est_birds_struck": 48
+  },
+  {
+    "species": "Long-billed dowitcher",
+    "incidents": 18,
+    "est_birds_struck": 48
+  },
+  {
+    "species": "Hawaiian duck",
+    "incidents": 17,
+    "est_birds_struck": 47
+  },
+  {
+    "species": "Redpoll",
+    "incidents": 22,
+    "est_birds_struck": 47
+  },
+  {
+    "species": "Common swift",
+    "incidents": 36,
+    "est_birds_struck": 46
+  },
+  {
+    "species": "Sedge wren",
+    "incidents": 26,
+    "est_birds_struck": 46
+  },
+  {
+    "species": "Rusty blackbird",
+    "incidents": 34,
+    "est_birds_struck": 44
+  },
+  {
+    "species": "Unknown terrestrial mammal",
+    "incidents": 46,
+    "est_birds_struck": 44
+  },
+  {
+    "species": "Snakes",
+    "incidents": 43,
+    "est_birds_struck": 43
+  },
+  {
+    "species": "Swifts",
+    "incidents": 28,
+    "est_birds_struck": 43
+  },
+  {
+    "species": "Laysan albatross",
+    "incidents": 37,
+    "est_birds_struck": 42
+  },
+  {
+    "species": "Orchard oriole",
+    "incidents": 27,
+    "est_birds_struck": 42
+  },
+  {
+    "species": "Common box turtle",
+    "incidents": 41,
+    "est_birds_struck": 41
+  },
+  {
+    "species": "Canada warbler",
+    "incidents": 41,
+    "est_birds_struck": 41
+  },
+  {
+    "species": "Horned grebe",
+    "incidents": 26,
+    "est_birds_struck": 41
+  },
+  {
+    "species": "Hammond's flycatcher",
+    "incidents": 40,
+    "est_birds_struck": 40
+  },
+  {
+    "species": "Gunnison's prairie dog",
+    "incidents": 20,
+    "est_birds_struck": 40
+  },
+  {
+    "species": "Forster's tern",
+    "incidents": 30,
+    "est_birds_struck": 40
+  },
+  {
+    "species": "Domestic/feral dog",
+    "incidents": 59,
+    "est_birds_struck": 40
+  },
+  {
+    "species": "Say's phoebe",
+    "incidents": 40,
+    "est_birds_struck": 40
+  },
+  {
+    "species": "Winter wren",
+    "incidents": 40,
+    "est_birds_struck": 40
+  },
+  {
+    "species": "American avocet",
+    "incidents": 20,
+    "est_birds_struck": 40
+  },
+  {
+    "species": "Foxes",
+    "incidents": 43,
+    "est_birds_struck": 39
+  },
+  {
+    "species": "MacGillivray's warbler",
+    "incidents": 39,
+    "est_birds_struck": 39
+  },
+  {
+    "species": "Mississippi kite",
+    "incidents": 39,
+    "est_birds_struck": 39
+  },
+  {
+    "species": "Willow flycatcher",
+    "incidents": 29,
+    "est_birds_struck": 39
+  },
+  {
+    "species": "Zenaida dove",
+    "incidents": 34,
+    "est_birds_struck": 39
+  },
+  {
+    "species": "Common goldeneye",
+    "incidents": 18,
+    "est_birds_struck": 38
+  },
+  {
+    "species": "Brown noddy",
+    "incidents": 18,
+    "est_birds_struck": 38
+  },
+  {
+    "species": "Cinnamon teal",
+    "incidents": 17,
+    "est_birds_struck": 37
+  },
+  {
+    "species": "Solitary sandpiper",
+    "incidents": 27,
+    "est_birds_struck": 37
+  },
+  {
+    "species": "Willow ptarmigan",
+    "incidents": 12,
+    "est_birds_struck": 37
+  },
+  {
+    "species": "Rufous hummingbird",
+    "incidents": 31,
+    "est_birds_struck": 36
+  },
+  {
+    "species": "Acadian flycatcher",
+    "incidents": 26,
+    "est_birds_struck": 36
+  },
+  {
+    "species": "Common merganser",
+    "incidents": 16,
+    "est_birds_struck": 36
+  },
+  {
+    "species": "Gray bat",
+    "incidents": 26,
+    "est_birds_struck": 36
+  },
+  {
+    "species": "Red-breasted merganser",
+    "incidents": 15,
+    "est_birds_struck": 35
+  },
+  {
+    "species": "Red crossbill",
+    "incidents": 10,
+    "est_birds_struck": 35
+  },
+  {
+    "species": "Willet",
+    "incidents": 25,
+    "est_birds_struck": 35
+  },
+  {
+    "species": "Blue grosbeak",
+    "incidents": 20,
+    "est_birds_struck": 35
+  },
+  {
+    "species": "American bittern",
+    "incidents": 30,
+    "est_birds_struck": 35
+  },
+  {
+    "species": "Western bluebird",
+    "incidents": 24,
+    "est_birds_struck": 34
+  },
+  {
+    "species": "Clay-colored sparrow",
+    "incidents": 34,
+    "est_birds_struck": 34
+  },
+  {
+    "species": "White-tailed tropicbird",
+    "incidents": 29,
+    "est_birds_struck": 34
+  },
+  {
+    "species": "Little blue heron",
+    "incidents": 29,
+    "est_birds_struck": 34
+  },
+  {
+    "species": "American alligator",
+    "incidents": 36,
+    "est_birds_struck": 34
+  },
+  {
+    "species": "Anna's hummingbird",
+    "incidents": 23,
+    "est_birds_struck": 33
+  },
+  {
+    "species": "White-eyed vireo",
+    "incidents": 23,
+    "est_birds_struck": 33
+  },
+  {
+    "species": "Long-billed thrasher",
+    "incidents": 12,
+    "est_birds_struck": 32
+  },
+  {
+    "species": "Common pauraque",
+    "incidents": 22,
+    "est_birds_struck": 32
+  },
+  {
+    "species": "Megabats",
+    "incidents": 11,
+    "est_birds_struck": 31
+  },
+  {
+    "species": "Nightjars",
+    "incidents": 31,
+    "est_birds_struck": 31
+  },
+  {
+    "species": "Common poorwill",
+    "incidents": 26,
+    "est_birds_struck": 31
+  },
+  {
+    "species": "Prairie warbler",
+    "incidents": 31,
+    "est_birds_struck": 31
+  },
+  {
+    "species": "Cattle",
+    "incidents": 12,
+    "est_birds_struck": 31
+  },
+  {
+    "species": "Long-billed curlew",
+    "incidents": 25,
+    "est_birds_struck": 30
+  },
+  {
+    "species": "Wedge-tailed shearwater",
+    "incidents": 30,
+    "est_birds_struck": 30
+  },
+  {
+    "species": "Green-tailed towhee",
+    "incidents": 25,
+    "est_birds_struck": 30
+  },
+  {
+    "species": "Kentucky warbler",
+    "incidents": 20,
+    "est_birds_struck": 30
+  },
+  {
+    "species": "Eastern whip-poor-will",
+    "incidents": 20,
+    "est_birds_struck": 30
+  },
+  {
+    "species": "Alder flycatcher",
+    "incidents": 24,
+    "est_birds_struck": 29
+  },
+  {
+    "species": "Hummingbirds",
+    "incidents": 29,
+    "est_birds_struck": 29
+  },
+  {
+    "species": "Summer tanager",
+    "incidents": 19,
+    "est_birds_struck": 29
+  },
+  {
+    "species": "Northern bobwhite",
+    "incidents": 19,
+    "est_birds_struck": 29
+  },
+  {
+    "species": "Philadelphia vireo",
+    "incidents": 23,
+    "est_birds_struck": 28
+  },
+  {
+    "species": "North American porcupine",
+    "incidents": 28,
+    "est_birds_struck": 28
+  },
+  {
+    "species": "Philippine collared dove",
+    "incidents": 17,
+    "est_birds_struck": 27
+  },
+  {
+    "species": "Budgerigar",
+    "incidents": 22,
+    "est_birds_struck": 27
+  },
+  {
+    "species": "Marbled godwit",
+    "incidents": 12,
+    "est_birds_struck": 27
+  },
+  {
+    "species": "Skunks",
+    "incidents": 28,
+    "est_birds_struck": 27
+  },
+  {
+    "species": "Long-eared owl",
+    "incidents": 26,
+    "est_birds_struck": 26
+  },
+  {
+    "species": "Golden-crowned sparrow",
+    "incidents": 25,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "Plovers, lapwings",
+    "incidents": 15,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "Chuck-will's-widow",
+    "incidents": 25,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "Carolina wren",
+    "incidents": 20,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "Red avadavat",
+    "incidents": 10,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "New World quail",
+    "incidents": 10,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "Indian silverbill",
+    "incidents": 5,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "Common gray fox",
+    "incidents": 25,
+    "est_birds_struck": 25
+  },
+  {
+    "species": "Blue-winged/cinnamon/green-winged teal complex",
+    "incidents": 9,
+    "est_birds_struck": 24
+  },
+  {
+    "species": "Red-throated loon",
+    "incidents": 20,
+    "est_birds_struck": 24
+  },
+  {
+    "species": "Red-bellied woodpecker",
+    "incidents": 19,
+    "est_birds_struck": 24
+  },
+  {
+    "species": "Yellow-billed magpie",
+    "incidents": 9,
+    "est_birds_struck": 24
+  },
+  {
+    "species": "Northern cardinal",
+    "incidents": 19,
+    "est_birds_struck": 24
+  },
+  {
+    "species": "Saffron finch",
+    "incidents": 13,
+    "est_birds_struck": 23
+  },
+  {
+    "species": "Mute swan",
+    "incidents": 13,
+    "est_birds_struck": 23
+  },
+  {
+    "species": "Noddies",
+    "incidents": 8,
+    "est_birds_struck": 23
+  },
+  {
+    "species": "Florida softshell turtle",
+    "incidents": 17,
+    "est_birds_struck": 22
+  },
+  {
+    "species": "Belted kingfisher",
+    "incidents": 21,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Black-throated sparrow",
+    "incidents": 16,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Wapiti (elk)",
+    "incidents": 12,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Inca dove",
+    "incidents": 16,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Rock wren",
+    "incidents": 16,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Magnificent frigatebird",
+    "incidents": 16,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Black-billed cuckoo",
+    "incidents": 21,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Yellow-throated vireo",
+    "incidents": 11,
+    "est_birds_struck": 21
+  },
+  {
+    "species": "Herons, egrets, bitterns",
+    "incidents": 15,
+    "est_birds_struck": 20
+  },
+  {
+    "species": "Smith's longspur",
+    "incidents": 10,
+    "est_birds_struck": 20
+  },
+  {
+    "species": "Ptarmigans",
+    "incidents": 5,
+    "est_birds_struck": 20
+  },
+  {
+    "species": "Lazuli bunting",
+    "incidents": 19,
+    "est_birds_struck": 19
+  },
+  {
+    "species": "Pronghorn",
+    "incidents": 10,
+    "est_birds_struck": 19
+  },
+  {
+    "species": "African silverbill",
+    "incidents": 9,
+    "est_birds_struck": 19
+  },
+  {
+    "species": "Grebes",
+    "incidents": 14,
+    "est_birds_struck": 19
+  },
+  {
+    "species": "Ash-throated flycatcher",
+    "incidents": 19,
+    "est_birds_struck": 19
+  },
+  {
+    "species": "Painted bunting",
+    "incidents": 14,
+    "est_birds_struck": 19
+  },
+  {
+    "species": "Clapper rail",
+    "incidents": 18,
+    "est_birds_struck": 18
+  },
+  {
+    "species": "Red-vented bulbul",
+    "incidents": 8,
+    "est_birds_struck": 18
+  },
+  {
+    "species": "Mountain chickadee",
+    "incidents": 8,
+    "est_birds_struck": 18
+  },
+  {
+    "species": "Royal tern",
+    "incidents": 13,
+    "est_birds_struck": 18
+  },
+  {
+    "species": "White-winged scoter",
+    "incidents": 8,
+    "est_birds_struck": 18
+  },
+  {
+    "species": "Downy woodpecker",
+    "incidents": 17,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Swallow-tailed kite",
+    "incidents": 12,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Western wood-pewee",
+    "incidents": 17,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Common wood-pigeon",
+    "incidents": 12,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Common eider",
+    "incidents": 7,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Richardson's ground squirrel",
+    "incidents": 12,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Mourning warbler",
+    "incidents": 17,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Antillean nighthawk",
+    "incidents": 17,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "White-winged crossbill",
+    "incidents": 7,
+    "est_birds_struck": 17
+  },
+  {
+    "species": "Antillean palm swift",
+    "incidents": 16,
+    "est_birds_struck": 16
+  },
+  {
+    "species": "Arctic tern",
+    "incidents": 6,
+    "est_birds_struck": 16
+  },
+  {
+    "species": "Woodpeckers",
+    "incidents": 16,
+    "est_birds_struck": 16
+  },
+  {
+    "species": "Lagomorphs (rabbits, hares)",
+    "incidents": 16,
+    "est_birds_struck": 16
+  },
+  {
+    "species": "Great frigatebird",
+    "incidents": 15,
+    "est_birds_struck": 15
+  },
+  {
+    "species": "Sprague's pipit",
+    "incidents": 15,
+    "est_birds_struck": 15
+  },
+  {
+    "species": "Cassin's vireo",
+    "incidents": 10,
+    "est_birds_struck": 15
+  },
+  {
+    "species": "Stilt sandpiper",
+    "incidents": 5,
+    "est_birds_struck": 15
+  },
+  {
+    "species": "Glossy ibis",
+    "incidents": 10,
+    "est_birds_struck": 15
+  },
+  {
+    "species": "Deer",
+    "incidents": 17,
+    "est_birds_struck": 15
+  },
+  {
+    "species": "Yellow-fronted canary",
+    "incidents": 5,
+    "est_birds_struck": 15
+  },
+  {
+    "species": "Falcons, caracaras",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Worm-eating warbler",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Pond slider",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "California ground squirrel",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Black swift",
+    "incidents": 9,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Common garter snake",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Nelson's sparrow",
+    "incidents": 9,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Lesser goldfinch",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Harris's sparrow",
+    "incidents": 9,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Crows, ravens",
+    "incidents": 9,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Connecticut warbler",
+    "incidents": 9,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Gambel's quail",
+    "incidents": 4,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Chestnut-collared longspur",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Gray francolin",
+    "incidents": 9,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Hooded warbler",
+    "incidents": 14,
+    "est_birds_struck": 14
+  },
+  {
+    "species": "Black-headed gull",
+    "incidents": 13,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Helmeted guineafowl",
+    "incidents": 3,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Bohemian waxwing",
+    "incidents": 3,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Swine (pigs)",
+    "incidents": 9,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Thick-billed longspur",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Olive-sided flycatcher",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Indiana bat",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Pacific wren",
+    "incidents": 13,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "LeConte's sparrow",
+    "incidents": 13,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Spotted towhee",
+    "incidents": 13,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Gull-billed tern",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Pallas's mastiff bat",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Eagles",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Long-tailed duck",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Red-crested cardinal",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Red-necked grebe",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Ibises",
+    "incidents": 8,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Small Indian mongoose",
+    "incidents": 13,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Common gallinule",
+    "incidents": 13,
+    "est_birds_struck": 13
+  },
+  {
+    "species": "Rock sandpiper",
+    "incidents": 2,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Blue-crowned parakeet",
+    "incidents": 2,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Black-throated gray warbler",
+    "incidents": 12,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Common chaffinch",
+    "incidents": 7,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Red-breasted nuthatch",
+    "incidents": 12,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Nanday parakeet",
+    "incidents": 7,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Wilson's plover",
+    "incidents": 7,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Greater roadrunner",
+    "incidents": 7,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Great cormorant",
+    "incidents": 2,
+    "est_birds_struck": 12
+  },
+  {
+    "species": "Pelicans",
+    "incidents": 11,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Tricolored heron",
+    "incidents": 11,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Newell's shearwater",
+    "incidents": 11,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Surf scoter",
+    "incidents": 6,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Collared peccary",
+    "incidents": 6,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Mallard/mottled duck complex",
+    "incidents": 6,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Larks",
+    "incidents": 6,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Bullock's oriole",
+    "incidents": 11,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Cassin's finch",
+    "incidents": 6,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Northern saw-whet owl",
+    "incidents": 11,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Gray flycatcher",
+    "incidents": 6,
+    "est_birds_struck": 11
+  },
+  {
+    "species": "Cassin's sparrow",
+    "incidents": 10,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Sage thrasher",
+    "incidents": 10,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Parrots",
+    "incidents": 5,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Sulphur-bellied flycatcher",
+    "incidents": 5,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Piping plover",
+    "incidents": 5,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Gulls, terns, kittiwakes",
+    "incidents": 5,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Tropicbirds",
+    "incidents": 10,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "King rail",
+    "incidents": 5,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Evening grosbeak",
+    "incidents": 5,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Monk parakeet",
+    "incidents": 5,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Black francolin",
+    "incidents": 10,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Black phoebe",
+    "incidents": 10,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Hares",
+    "incidents": 10,
+    "est_birds_struck": 10
+  },
+  {
+    "species": "Prothonotary warbler",
+    "incidents": 9,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Carolina chickadee",
+    "incidents": 4,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Horse",
+    "incidents": 5,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Eastern rat snake",
+    "incidents": 9,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Sooty tern",
+    "incidents": 9,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Brown-crested flycatcher",
+    "incidents": 4,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Least bittern",
+    "incidents": 9,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Western small-footed myotis",
+    "incidents": 4,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Dusky flycatcher",
+    "incidents": 9,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "African collared dove",
+    "incidents": 4,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Chukar",
+    "incidents": 4,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Plains garter snake",
+    "incidents": 9,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Ground squirrels",
+    "incidents": 9,
+    "est_birds_struck": 9
+  },
+  {
+    "species": "Southern lapwing",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Great kiskadee",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Jamaican fruit bat",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Western barn owl",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Black-chinned hummingbird",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Old World vultures",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Whiskered tern",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Lined snake",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Baird's sparrow",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Partridges",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Song thrush",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Yellow rail",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Black-footed albatross",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Kites, eagles, hawks",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Eurasian wigeon",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Hermit warbler",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Tricolored blackbird",
+    "incidents": 3,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Eastern screech-owl",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "American badger",
+    "incidents": 8,
+    "est_birds_struck": 8
+  },
+  {
+    "species": "Western mastiff bat",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Red-naped sapsucker",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Brown creeper",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Pheasants",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Ross's goose",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "American mink",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Egyptian goose",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Golden-winged warbler",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Bell's sparrow",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Vireos",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Long-tailed jaeger",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Eurasian kestrel",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Hooded oriole",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Purple sandpiper",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Western house-martin",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Cactus wren",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Trumpeter swan",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Purple gallinule",
+    "incidents": 7,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "White-winged tern",
+    "incidents": 2,
+    "est_birds_struck": 7
+  },
+  {
+    "species": "Sandwich tern",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Common gull",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Red phalarope",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Scaled quail",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Harris's hawk",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Lilac-crowned parrot",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Black kite",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "White-tufted grebe",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Scaly-naped pigeon",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Gray-headed chickadee",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "White-tailed prairie dog",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "White-tailed hawk",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Flammulated owl",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Philippine duck",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Western rat snake",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "McKay's bunting",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Orioles",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Black-faced bunting",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Surfbird",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Starlings, mynas",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Olive-throated parakeet",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Yellow-bellied marmot",
+    "incidents": 6,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Nuthatches",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Heermann's gull",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Little tern",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Northern lapwing",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Angolan free-tailed bat",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "Yellow-chevroned parakeet",
+    "incidents": 1,
+    "est_birds_struck": 6
+  },
+  {
+    "species": "White-breasted nuthatch",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Indian pipistrelle",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Reddish egret",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "American goshawk",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Western diamondback rattlesnake",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Louisiana waterthrush",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Red knot",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "White-crested elaenia",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Short-tailed hawk",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Eurasian buzzard",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Costa's hummingbird",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Brandt's cormorant",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Common kingsnake",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Roseate spoonbill",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Fish crow",
+    "incidents": 5,
+    "est_birds_struck": 5
+  },
+  {
+    "species": "Alligator snapping turtle",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Red-tailed tropicbird",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Kit fox",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Great gray owl",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Japanese white-eye",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Red-breasted sapsucker",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Red-footed booby",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Ruffed grouse",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Neotropic cormorant",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Coastal plain cooter",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Western pipistrelle",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Tropical kingbird",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Tufted titmouse",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "North American beaver",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Muscovy duck",
+    "incidents": 5,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Tree squirrels",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Townsend's solitaire",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Elegant tern",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Egyptian free-tailed bat",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Black-headed gull complex",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Swans",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Northern water snake",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Eastern cattle egret",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Waxbills, mannikins, parrotfinches",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Big free-tailed bat",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "White-crowned pigeon",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Quails, pheasants",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Barrow's goldeneye",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Canids",
+    "incidents": 6,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Bewick's wren",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Pocketed free-tailed bat",
+    "incidents": 4,
+    "est_birds_struck": 4
+  },
+  {
+    "species": "Yuma myotis",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Rock ptarmigan",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Seaside sparrow",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Blue-winged warbler",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Allen's hummingbird",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "California myotis",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "California towhee",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Thrashers",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Blue-and-white swallow",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Sagebrush sparrow",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Cape serotine",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Western screech-owl",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Swainson's warbler",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Clark's grebe",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Striped mud turtle",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Calliope hummingbird",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Carrion crow",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Limpkin",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Florida red-bellied cooter",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Olive sparrow",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Couch's kingbird",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Coypu (nutria)",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Nacunda nighthawk",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Iceland gull",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Gray heron",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Northern shrike",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Kentish plover",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Long-legged myotis",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Double-striped thick-knee",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Eastern gray squirrel",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Pacific loon",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Eared dove",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Gray-breasted martin",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Parasitic jaeger",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Corn snake",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Prairie rattlesnake",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Common snipe",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Grouse",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Hairy woodpecker",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Meadow pipit",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Cormorants",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Hawaiian hawk",
+    "incidents": 3,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Moose",
+    "incidents": 6,
+    "est_birds_struck": 3
+  },
+  {
+    "species": "Fork-tailed storm-petrel",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Bushtit",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Olive-backed pipit",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Eastern mud turtle",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Lawrence's goldfinch",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Milk snake",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Oriental plover",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Oriental turtle dove",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Ornate box turtle",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Loons",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Wagner's bonneted bat",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Lawrence's warbler",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Eastern diamondback rattlesnake",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Gray sac-winged bat",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Spruce grouse",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Spotted thick-knee",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Water moccasin",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Bare-eyed pigeon",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Florida bonneted bat",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Spotted bat",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Bats",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Swift, tree-swifts, hummingbirds",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Long-tailed weasel",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Eurasian coot",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Blackbirds, meadowlarks, orioles",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Western ribbon snake",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Black turnstone",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Long-eared myotis",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Broad-eared bat",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Morelet's seedeater",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Western yellow bat",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Mynas",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Eurasian curlew",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "New world rats",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Black-legged kittiwake",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Brown booby",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Emperor goose",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Pallid swift",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Bicknell's thrush",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Northern hawk owl",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Thirteen-lined ground squirrel",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Thick-billed kingbird",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Eastern small-footed myotis",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Least weasel",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Spiny softshell turtle",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "River otter",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Southeastern myotis",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Cuckoos, roadrunners",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Pin-tailed snipe",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Antelope jackrabbit",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Indian flying fox",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Checkered garter snake",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Prairie dogs, marmots, squirrels",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Chickadees",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Curve-billed thrasher",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Purple heron",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Kirtland's warbler",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Greater Antillean grackle",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Red-crowned amazon",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Rufous-tailed robin",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Redwing",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Common pipistrelle",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Gyrfalcon",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Rook",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Diamondback water snake",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "California kingsnake",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Caribou",
+    "incidents": 3,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Parakeets",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Canada jay",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "White-winged swallow",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Pelagic cormorant",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Kittiwakes",
+    "incidents": 2,
+    "est_birds_struck": 2
+  },
+  {
+    "species": "Fox squirrel",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Yellow-browed warbler",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Greater spotted eagle",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Western red bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Kites",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Hispaniolan mastiff bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Greenish warbler",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Black redstart",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Frigatebirds",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Fringed myotis",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Loggerhead kingbird",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Hooded crow",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Lanceolated warbler",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Alpine swift",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Western marsh harrier",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Black mastiff bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Hawaiian petrel",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Yellow-headed caracara",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Grey-headed flying fox",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Harlequin duck",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Western hognose snake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Flying foxes",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "African yellow bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Magpies",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Band-rumped storm-petrel",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Bar-tailed godwit",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Western fox snake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Black-crowned sparrow lark",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Lappet-faced vulture",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Greater prairie chicken",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Marbled murrelet",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Little swift",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Lesser bulldog bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Australian pelican",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Wilson/Common snipe complex",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Gray-tailed tattler",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Antillean fruit-eating bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Bearded seal",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Wood sandpiper",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "White-nosed coati",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Island canary",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Bell's vireo",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Iguanas",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Kuhl's pipistrelle",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Leschenault's rousette",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Gray vireo",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Whooping crane",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Kelaart's pipistrelle",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "American red squirrel",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Golden-fronted woodpecker",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Lesser whitethroat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "White-bellied sea-eagle",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Ladder-backed woodpecker",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Gray-crowned rosy-finch",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Wrentit",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "White stork",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Hume's short-toed lark",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Great crested grebe",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Little owl",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Little red flying fox",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Horned puffin",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Garden warbler",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Broad-tailed hummingbird",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Mariana kingfisher",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Pileated woodpecker",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Sharp-tailed sandpiper",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Shearwaters",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Cerulean warbler",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Dark-billed cuckoo",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Piute ground squirrel",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "DeKay's brown snake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Pine grosbeak",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Siberian sand-plover ",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Sinaloan mastiff bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Domestic sheep",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Marsh rabbit",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Pigeon guillemot",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Picazuro pigeon",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Snowshoe hare",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Caribbean martin",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Peters's short-nosed fruit bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Drongos",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Pearly-eyed thrasher",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Sooty mustached bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "South American snipe",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Chicken turtle",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Chihuahuan meadowlark",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Civets (mongooses)",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Cuban flower bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Common murre",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Rose-ringed parakeet",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Roseate tern",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Reptiles",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Common ringed plover",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Red-wattled lapwing",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Red-necked stint",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Ruddy ground dove",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Corn crake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Common cuckoo",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Rufous-necked wood rail",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Red-legged kittiwake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Sabine's gull",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Red-headed woodpecker",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Red-billed pigeon",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Rainbow lorikeet",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Clark's nutcracker",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Cranes",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Pygmy nuthatch",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "California quail",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Speckled pigeon",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Spectacled caiman",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Blue-black grassquit",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Turkeys",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Typical owls",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Eurasian moorhen",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Botta's pocket gopher",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Eurasian siskin",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Mugimaki flycatcher",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "European golden-plover",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Blue-tailed bee-eater",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Mountain cottontail",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "European goldfinch",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Pallas\u2019s long-tongued bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "European robin",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Vega gull",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Vermilion Flycatcher",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Mohave rattlesnake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Mitred parakeet",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Virginia's warbler",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Medium egret",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Mauritian tomb bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Wedge-tailed eagle",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "River cooter",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Bronze mannikin",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Naked-rumped tomb bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Tropical mockingbird",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Spotted flycatcher",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Spur-winged lapwing",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Eastern barn owl",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Storm-petrels",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Eastern hognose snake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Olivaceous elaenia",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Eastern pine snake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Eastern racer",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Brush rabbit",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Northern pygmy-owl",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Brown-throated parakeet",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Texas blind snake",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Northern map turtle",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Brown flower bat",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Towhees",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Northern gannet",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Northern fulmar",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Tree pipit",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Brown bear",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Red-legged partridge",
+    "incidents": 1,
+    "est_birds_struck": 1
+  },
+  {
+    "species": "Axis deer",
+    "incidents": 1,
+    "est_birds_struck": 0
+  },
+  {
+    "species": "American black bear",
+    "incidents": 3,
+    "est_birds_struck": 0
+  }
+]
