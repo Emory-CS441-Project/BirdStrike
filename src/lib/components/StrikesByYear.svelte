@@ -21,7 +21,7 @@
 
 	type Margin = { top: number; right: number; bottom: number; left: number };
 
-	const MARGIN: Margin = { top: 20, right: 160, bottom: 40, left: 70 };
+	const MARGIN: Margin = { top: 20, right: 100, bottom: 40, left: 70 };
 	const STACKED_HEIGHT = 400;
 	const STACKED_INNER_HEIGHT = STACKED_HEIGHT - MARGIN.top - MARGIN.bottom;
 
@@ -195,8 +195,8 @@
 				Estimated Strikes
 			</button>
 		</div>
-		<div class="m-auto flex text-lg">Bird Strikes Over Time By Phase Of Flight</div>
-		<div class="ml-auto flex gap-2 px-20">
+		<div class="mr-auto flex text-lg">Bird Strikes Over Time By Phase Of Flight</div>
+		<div class="ml-auto flex gap-2">
 			<button
 				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
 					{viewMode === 'stacked' ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"

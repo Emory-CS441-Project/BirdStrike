@@ -10,21 +10,27 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<main class="mx-auto max-w-6xl px-6 py-16">
-	<header class="mb-16">
-		<h1 class="mb-4 text-4xl font-bold">Article Title</h1>
-		<p class="text-lg text-gray-500">
-			A sentence or two about what this is about. Talk about some other things too.
-		</p>
-	</header>
-
-	<section class="prose prose-lg mb-4 max-w-none">
-		<h2>Introduction</h2>
+<main class="mx-auto max-w-5xl px-6 py-16 [&>section]:mx-auto [&>section]:max-w-4xl">
+	<section class="prose prose-lg mb-16">
+		<h1>Acceptable Collateral</h1>
 		<p>
-			Exploration of strikes increasing over time. Incidents is total number of reports in the
-			year. Estimated Strikes accounts for how many birds were involved in each incident. Then to
-			better understand the different phase of flight categories there is the ability to split by
-			group.
+			Thousands of collisions between birds and aircraft occur in the United States every year.
+			These are seen as rare occurrences with airline companies doing their best to decrease the
+			scope of the problem. However, the data tells a different story: one of a worsening root
+			problem, systemic neglect of wildlife, and progress measured only in decreasing costs. This is
+			a visual analysis of the FAA Wildlife Strike <a href="https://wildlife.faa.gov/home"
+				>Database</a
+			>.<br />
+		</p>
+		<p class="-mt-4 text-gray-500">Authors: Shane Berhoff, Max Roberts, and Blake Grudzian</p>
+	</section>
+
+	<section class="prose prose-lg mb-4">
+		<h2>The Scale of the Problem</h2>
+		<p>
+			Exploration of strikes increasing over time. Incidents is total number of reports in the year.
+			Estimated Strikes accounts for how many birds were involved in each incident. Then to better
+			understand the different phase of flight categories there is the ability to split by group.
 		</p>
 	</section>
 
@@ -32,7 +38,7 @@
 		<StrikesByYear data={data.strikesbyYear} />
 	</div>
 
-	<section class="prose prose-lg mb-16 max-w-none">
+	<section class="prose prose-lg mb-16">
 		<p>Paragraph here.</p>
 	</section>
 
@@ -44,11 +50,11 @@
 		<SpeciesBreakdown data={data.speciesStrikes} />
 	</div>
 
-	<section class="prose prose-lg mb-16 max-w-none">
+	<section class="prose prose-lg mb-16">
 		<p>Paragraph here.</p>
 	</section>
 
-	<section class="prose prose-lg mb-16 max-w-none">
+	<section class="prose prose-lg mb-16">
 		<p>
 			Airports are legally required to manage wildlife within a five-mile radius, and yet this
 			five-mile radius is actually where birds are most in danger, accounting for the vast majority
@@ -61,17 +67,18 @@
 		</p>
 	</section>
 
-	<section class="prose prose-lg mb-4 max-w-none">
+	<section class="prose prose-lg mb-4">
 		<h2>Whee and When Bird Strikes Happen</h2>
 		<p>
 			Bird strikes are not distributed evenly across the country. Incidents cluster tightly around
-			major hub airports and the migratory corridors that connect them. Switch to <strong>Bubbles</strong>
-			view to see density hotspots emerge along the Atlantic and Mississippi flyways — the two
-			busiest highways in the avian world. Then use the month filter below the map to watch the
-			geography shift through the calendar year: strikes are relatively sparse in winter, build
-			through spring, and surge dramatically from <strong>July through October</strong> as
-			hundreds of millions of birds funnel southward through the same airspace used by commercial
-			aviation.
+			major hub airports and the migratory corridors that connect them. Switch to <strong
+				>Bubbles</strong
+			>
+			view to see density hotspots emerge along the Atlantic and Mississippi flyways — the two busiest
+			highways in the avian world. Then use the month filter below the map to watch the geography shift
+			through the calendar year: strikes are relatively sparse in winter, build through spring, and surge
+			dramatically from <strong>July through October</strong> as hundreds of millions of birds funnel
+			southward through the same airspace used by commercial aviation.
 		</p>
 	</section>
 
@@ -79,17 +86,17 @@
 		<StrikesMap data={data.latlonData} />
 	</div>
 
-	<section class="prose prose-lg mb-16 max-w-none">
+	<section class="prose prose-lg mb-16">
 		<p>
 			The autumn concentration is especially strong around the Great Lakes and along the Eastern
 			Seaboard, where geography funnels migrating birds into narrow corridors directly overlapping
-			with the approach and departure paths of the nation's busiest airports. Airports like JFK,
-			and O'Hare (ORD) sit squarely in these corridors, making the
-			collision risk less a matter of bad luck and more a matter of structural inevitability.
+			with the approach and departure paths of the nation's busiest airports. Airports like JFK, and
+			O'Hare (ORD) sit squarely in these corridors, making the collision risk less a matter of bad
+			luck and more a matter of structural inevitability.
 		</p>
 	</section>
 
-	<section class="prose prose-lg mb-4 max-w-none">
+	<section class="prose prose-lg mb-4">
 		<h2>Granular Interaction Data</h2>
 		<p>Exploration of the data grouped by top species and top airlines.</p>
 	</section>
@@ -101,7 +108,7 @@
 		<section class="flex-1/2 pt-40 pl-10">Test</section>
 	</div>
 
-	<section class="prose prose-lg mb-16 max-w-none">
+	<section class="prose prose-lg mb-16">
 		<p>
 			It would also benefit the airlines to reduce the number of collisions. The repairs alone are a
 			great cost for the airlines and have even increased in recent years, with struck engines
@@ -119,7 +126,7 @@
 		<CostPlot boxData={data.CostBox} trendData={data.CostTrend} />
 	</div>
 
-	<section class="prose prose-lg mb-16 max-w-none">
+	<section class="prose prose-lg mb-16">
 		<p>
 			As technology improves and planes become more bird resistant, airlines will no longer have to
 			weigh human safety vs. flight delays and can just plow through birds, treating them as

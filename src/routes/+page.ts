@@ -18,13 +18,21 @@ export async function load({ fetch }) {
 	const interactionData: InteractionData = await interactionRes.json();
 	const csvText = await latlonRes.text();
 	const latlonData = d3.csvParse(csvText, (row) => ({
-        LATITUDE: +row.LATITUDE,
-        LONGITUDE: +row.LONGITUDE,
-        INCIDENT_MONTH: row.INCIDENT_MONTH ? +row.INCIDENT_MONTH : null
-    }));
+		LATITUDE: +row.LATITUDE,
+		LONGITUDE: +row.LONGITUDE,
+		INCIDENT_MONTH: row.INCIDENT_MONTH ? +row.INCIDENT_MONTH : null
+	}));
 	const CostBox = await CostBoxRes.json();
 	const CostTrend = await CostTrendRes.json();
 	const Traffic = await TrafficRes.json();
 	const speciesStrikes = await SpeciesRes.json();
-	return { strikesbyYear, interactionData, latlonData, CostBox, CostTrend, Traffic, speciesStrikes };
+	return {
+		strikesbyYear,
+		interactionData,
+		latlonData,
+		CostBox,
+		CostTrend,
+		Traffic,
+		speciesStrikes
+	};
 }
