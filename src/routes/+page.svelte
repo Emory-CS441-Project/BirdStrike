@@ -36,7 +36,7 @@
 		</p>
 	</section>
 
-	<div class="mb-6">
+	<div class="mb-8">
 		<StrikesByYear data={data.strikesbyYear} />
 	</div>
 
@@ -67,33 +67,28 @@
 		<StrikesByTraffic data={data.strikesbyYear} traffic={data.Traffic} />
 	</div>
 
-	<section class="prose prose-lg mb-4">
-		<h2>Airport Responsibility</h2>
+	<section class="prose prose-lg mb-8">
+		<h2>Airport Responsibility / Migration</h2>
 		<p>
-			Airports are legally required to manage wildlife within a five-mile radius, and yet this
-			five-mile radius is actually where birds are most in danger, accounting for the vast majority
-			of collisions. In this “Responsibility zone” the most deadly airports are killing birds of
-			over 200 unique species. That's an entire ecosystem that has been placed in the crosshair of
-			the commercial airline industry. This ecosystem is only destroyed further by continuous
-			expansions, leaving the birds without a habitat (the leading reason for decline in bird
-			population). Then due to poor restructuring of the area the birds end up waiting on the tarmac
-			for their turn.
+			Given that a majority of incidents seem to occur right at airports we decided to look into
+			this. It turns out that the FAA requires airports to manage wildlife in and around their
+			operations with a recommendation of a 5 mile zone. The goal of this is to minimize problems
+			for aircraft and to protect the surrounding environment. It seems though that this has just
+			lead to ecosystem disruption and habitat fragmentation: the birds then have no where to go and
+			end up flocking to the runway causing a third of incidents.
 		</p>
-
 		<p>
-			Bird strikes are not distributed evenly across the country. Incidents cluster tightly around
-			major hub airports and the migratory corridors that connect them. Switch to <strong
-				>Bubbles</strong
-			>
-			view to see density hotspots emerge along the Atlantic and Mississippi flyways — the two busiest
-			highways in the avian world. Then use the month filter below the map to watch the geography shift
-			through the calendar year: strikes are relatively sparse in winter, build through spring, and surge
+			This then brings into question where geographically do these incidents take place? It turns
+			out they are not distributed evenly across the country. Incidents cluster tightly around major
+			hub airports and the migratory corridors that connect them. The map below displays this with
+			density bubbles. Use the month filter below the map to watch the geography shift through the
+			calendar year: strikes are relatively sparse in winter, build through spring, and surge
 			dramatically from <strong>July through October</strong> as hundreds of millions of birds funnel
 			southward through the same airspace used by commercial aviation.
 		</p>
 	</section>
 
-	<div class="mb-16">
+	<div class="mb-8">
 		<StrikesMap data={data.latlonData} />
 	</div>
 
@@ -103,7 +98,9 @@
 			Seaboard, where geography funnels migrating birds into narrow corridors directly overlapping
 			with the approach and departure paths of the nation's busiest airports. Airports like JFK, and
 			O'Hare (ORD) sit squarely in these corridors, making the collision risk less a matter of bad
-			luck and more a matter of structural inevitability.
+			luck and more a matter of structural inevitability. Given that airports are supposed to be
+			managing wildlife in their area and have full knowledge of migration seasons it seems that
+			better systems should be put into place to decrease problems for both parties.
 		</p>
 	</section>
 

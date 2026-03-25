@@ -379,17 +379,14 @@
 
 <figure class="space-y-3">
 	<!-- ── Toolbar ────────────────────────────────────────────────────────────── -->
-	<div class="flex flex-wrap items-center gap-3">
-		<span class="mr-auto text-lg font-medium">Geographic Distribution of Bird Strikes</span>
-		<div class="flex flex-wrap items-center gap-3">
-			<span class="mr-auto text-lg font-medium">Geographic Distribution of Bird Strikes</span>
-		</div>
+	<div class="flex flex-wrap">
+		<span class="text-lg font-medium">Geographic Distribution of Bird Strikes</span>
 	</div>
 
 	<!-- ── Mode explanation ───────────────────────────────────────────────────── -->
 	<p class="text-sm text-gray-500">
-		Each bubble covers a ~{GRID_DEG}° grid cell. <strong>Size and colour</strong> both encode strike
-		density: larger and darker orange means more strikes in that area.
+		<strong>Size and color</strong> both encode strike density: larger and darker means more strikes
+		in that area.
 		<span class="font-medium text-[#1a237e]">⊙ Blue markers</span> show the ten airports with the highest
 		reported strike totals.
 	</p>
@@ -483,9 +480,4 @@
 			</div>
 		</div>
 	{/if}
-
-	<figcaption class="text-sm text-gray-500">
-		FAA wildlife strike database. Strike locations are approximate — many records are attributed to
-		airport coordinates rather than exact impact point.
-	</figcaption>
 </figure>
