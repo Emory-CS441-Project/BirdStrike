@@ -15,14 +15,15 @@
 		<h1>Acceptable Collateral</h1>
 		<p>
 			Thousands of collisions between birds and aircraft occur in the United States every year.
-			These are seen as rare occurrences with airline companies doing their best to decrease the
-			scope of the problem. However, the data tells a different story: one of a worsening root
+			These are generally written off as unfortunate, rare occurrences; airlines claim to try 
+			their best, but can do little to prevent bird deaths.
+			However, the data tells a different story: one of a worsening root
 			problem, systemic neglect of wildlife, and progress measured only in decreasing costs. This is
 			a visual analysis of the FAA Wildlife Strike <a href="https://wildlife.faa.gov/home"
 				>Database</a
 			>.<br />
 		</p>
-		<p class="-mt-4 text-gray-500">Authors: Shane Berhoff, Max Roberts, and Blake Grudzian</p>
+		<p class="-mt-4 text-gray-500">Authors: Shane Berhoff, Max Roberts, and Blake Grudzien</p>
 	</section>
 
 	<section class="prose prose-lg mb-8">
@@ -42,20 +43,21 @@
 
 	<section class="prose prose-lg mb-8">
 		<p>
-			The data has a couple of interesting features. The first is that in the peak year of 2024 it
-			is estimated around 35,000 birds were killed in incidents with the problem clearly worsening.
-			So it brings into question is any of this avoidable? Well, looking at the phase of flight a
+			The data has a couple of interesting features. The first is that in the peak year of 2024, it
+			is estimated around 35,000 birds were killed in incidents, and the number continues to grow every year.
+			This begs the question, is any of this avoidable? Looking at the phases of flight, a
 			large majority of those incidents were on the runway or on approach. This surprised us and
 			means a large majority of the incidents were not en route but at an airport.
 		</p>
 		<p>
 			The next interesting feature is the significant dip in 2020 that breaks the overall trend.
-			This is due to covid where with less planes flying obviously there will be less incidents.
-			However, this brings up an important idea, the data can be influenced by air traffic itself.
-			So this trend of the problem "worsening" may only be demonstrating an increase in flights.
+			This is due to Covid where less frequent flights naturally led to less frqeuent strikes.
+			However, this brings up an important caveat: the frequency of strikes can be influenced by
+			total air traffic.
 		</p>
 		<p>
-			The graph below shows that this is not the case. According to <a
+			However, the graph below shows that strikes are indeed increasing compared to total air traffic. 
+			According to <a
 				href="https://www.transtats.bts.gov/traffic/">data</a
 			> from the Bureau of Transportation Statistics the general trend has been almost flat with the one
 			dip in 2020 as expected. This can then be used to scale the incident data with "Incidents per million
@@ -70,21 +72,19 @@
 	<section class="prose prose-lg mb-8">
 		<h2>Airport Responsibility / Migration</h2>
 		<p>
-			Given that a majority of incidents seem to occur right at airports we decided to look into
-			this. It turns out that the FAA requires airports to manage wildlife in and around their
-			operations with a recommendation of a 5 mile zone. The goal of this is to minimize problems
-			for aircraft and to protect the surrounding environment. It seems though that this has just
-			lead to ecosystem disruption and habitat fragmentation: the birds then have no where to go and
-			end up flocking to the runway causing a third of incidents.
+			The FAA requires airports to manage wildlife around their operations
+			with a recommended zone of 5 miles with the intended goal to minimize problems
+			for aircraft and to protect the surrounding environment. However, airport expansion
+			leads to ecosystem disruption, and perhaps confusion for the birds who may not 
+			realize their previous home is no longer safe. This is one possible explanation for
+			a third of all incidents happen on the runway itself, not in the air.
 		</p>
 		<p>
-			This then brings into question where geographically do these incidents take place? It turns
-			out they are not distributed evenly across the country. Incidents cluster tightly around major
-			hub airports and the migratory corridors that connect them. The map below displays this with
-			density bubbles. Use the month filter below the map to watch the geography shift through the
-			calendar year: strikes are relatively sparse in winter, build through spring, and surge
-			dramatically from <strong>July through October</strong> as hundreds of millions of birds funnel
-			southward through the same airspace used by commercial aviation.
+			Incidents tend to cluster tightly around major hub airports and the migratory corridors that connect them. 
+			The map below displays this with density bubbles. Use the month filter below the map to watch 
+			the geography shift through the calendar year: strikes are relatively sparse in winter, build 
+			through spring, and surge dramatically from <strong>July through October</strong> 
+			as hundreds of millions of birds funnel southward through the same airspace used by commercial aviation.
 		</p>
 	</section>
 
