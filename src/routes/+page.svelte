@@ -104,24 +104,48 @@
 		</p>
 	</section>
 
-	<section class="prose prose-lg mb-4">
+	<section class="prose prose-lg mb-8">
 		<h2>Species Analysis</h2>
-		<p>Exploration of the data grouped by top species and top airlines.</p>
+		<p>
+			With strikes spanning the entire country, the question becomes: which birds are bearing the
+			brunt? In most cases, the answer is unknown since species go unidentified in the majority of
+			reports. When identification is possible though, the data spans 946 unique species and reveals
+			a clear pattern. Ground dwellers like mourning doves, killdeer, and horned larks are struck
+			most frequently (birds that are actively attracted to the short grass and open terrain of
+			airport environments). Switching to <strong>Estimated Strikes</strong> shows a really interesting
+			shift where European starlings and gulls surge to the top; this is a consequence of traveling in
+			flocks where a single incident can mean dozens of birds.
+		</p>
 	</section>
 
 	<div class="mb-16">
 		<SpeciesBreakdown data={data.speciesStrikes} />
 	</div>
 
-	<section class="prose prose-lg mb-16">
-		<p>Paragraph</p>
-	</section>
-
-	<div class="flex">
+	<div class="mb-16 flex">
+		<section class="prose prose-lg -mt-4 flex-1/2">
+			<h3>Species x Airline Interaction</h3>
+			<p>
+				Breaking the data down by both species and airline reveals another layer. The heatmap to the
+				right cross-references the most frequently struck species against the airlines reporting the
+				most incidents. It should be noted that this is a subset of the data as both pieces of
+				information needed to be present.
+			</p>
+			<p></p>
+			<p>
+				The patterns that emerge reflect both geography and more minute relationships. European
+				starlings and gulls show the darkest cells across the board, consistent with their flock
+				behavior. American, Delta, Southwest, and United the big passenger carriers seem to have
+				high density across nearly every species which reflects their route volume and hub
+				footprint. Barn swallows are a larger problem for American and Delta, Horned lark for
+				Southwest and United, and Rock Pigeon for American and Southwest. These difference point to
+				the fact that different airlines operate heavily out of different airports, and those
+				airports sit in very different ecosystems.
+			</p>
+		</section>
 		<div class="flex-1/2">
 			<InteractionHeatMap data={data.interactionData} />
 		</div>
-		<section class="flex-1/2 pt-40 pl-10">Test</section>
 	</div>
 
 	<section class="prose prose-lg mb-4">

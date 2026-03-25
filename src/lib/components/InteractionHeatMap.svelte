@@ -144,12 +144,10 @@
 </script>
 
 <figure class="overflow-visible font-mono">
-	<p class="mb-1 text-xs tracking-widest text-slate-400 uppercase">Species × Airline</p>
-	<p class="mb-3 text-xs text-slate-500">Estimated bird strikes</p>
 	<div class="overflow-visible">
 		<svg bind:this={svgEl}></svg>
 	</div>
-	<figcaption class="mt-2 text-xs text-slate-500">
+	<figcaption class="mt-2 ml-15 text-xs text-slate-500">
 		Bird strikes between the most active species and airlines
 	</figcaption>
 </figure>
