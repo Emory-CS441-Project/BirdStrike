@@ -25,30 +25,47 @@
 		<p class="-mt-4 text-gray-500">Authors: Shane Berhoff, Max Roberts, and Blake Grudzian</p>
 	</section>
 
-	<section class="prose prose-lg mb-4">
+	<section class="prose prose-lg mb-8">
 		<h2>The Scale of the Problem</h2>
 		<p>
-			Exploration of strikes increasing over time. Incidents is total number of reports in the year.
-			Estimated Strikes accounts for how many birds were involved in each incident. Then to better
-			understand the different phase of flight categories there is the ability to split by group.
+			The FAA has recorded over 300,000 strike reports since 1990, and the trend is clear: incidents
+			have risen steadily year over year. The chart below breaks this down annually by phase of
+			flight. Toggle "Estimated Strikes" to shift from incident counts to estimated number of
+			individual birds involved. Additionally toggle "Split" to see the comparative trends within
+			each group.
 		</p>
 	</section>
 
-	<div class="mb-16">
+	<div class="mb-6">
 		<StrikesByYear data={data.strikesbyYear} />
 	</div>
 
-	<section class="prose prose-lg mb-16">
-		<p>Paragraph here.</p>
+	<section class="prose prose-lg mb-8">
+		<p>
+			The data has a couple of interesting features. The first is that in the peak year of 2024 it
+			is estimated around 35,000 birds were killed in incidents with the problem clearly worsening.
+			So it brings into question is any of this avoidable? Well, looking at the phase of flight a
+			large majority of those incidents were on the runway or on approach. This surprised us and
+			means a large majority of the incidents were not en route but at an airport.
+		</p>
+		<p>
+			The next interesting feature is the significant dip in 2020 that breaks the overall trend.
+			This is due to covid where with less planes flying obviously there will be less incidents.
+			However, this brings up an important idea, the data can be influenced by air traffic itself.
+			So this trend of the problem "worsening" may only be demonstrating an increase in flights.
+		</p>
+		<p>
+			The graph below shows that this is not the case. According to <a
+				href="https://www.transtats.bts.gov/traffic/">data</a
+			> from the Bureau of Transportation Statistics the general trend has been almost flat with the one
+			dip in 2020 as expected. This can then be used to scale the incident data with "Incidents per million
+			flights". This remarkably smooths out the 2020 drop and shows a clear trend of a worsening problem.
+		</p>
 	</section>
 
 	<div class="mb-16">
 		<StrikesByTraffic data={data.strikesbyYear} traffic={data.Traffic} />
 	</div>
-
-	<section class="prose prose-lg mb-16">
-		<p>Paragraph here.</p>
-	</section>
 
 	<section class="prose prose-lg mb-4">
 		<h2>Airport Responsibility</h2>

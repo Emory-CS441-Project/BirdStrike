@@ -55,16 +55,19 @@
 		innerWidth: number
 	) {
 		const legend = svg.append('g').attr('transform', `translate(${innerWidth + 12}, 0)`);
-		phases.forEach((phase, i) => {
-			const g = legend.append('g').attr('transform', `translate(0, ${i * 20})`);
-			g.append('rect').attr('width', 12).attr('height', 12).attr('fill', color(phase));
-			g.append('text')
-				.attr('x', 16)
-				.attr('y', 10)
-				.attr('font-size', 11)
-				.attr('fill', 'currentColor')
-				.text(phase);
-		});
+		phases
+			.slice()
+			.reverse()
+			.forEach((phase, i) => {
+				const g = legend.append('g').attr('transform', `translate(0, ${i * 20})`);
+				g.append('rect').attr('width', 12).attr('height', 12).attr('fill', color(phase));
+				g.append('text')
+					.attr('x', 16)
+					.attr('y', 10)
+					.attr('font-size', 11)
+					.attr('fill', 'currentColor')
+					.text(phase);
+			});
 	}
 
 	function appendXAxis(
@@ -96,7 +99,18 @@
 
 			appendXAxis(svg, x, STACKED_INNER_HEIGHT);
 			svg.append('g').call(d3.axisLeft(y).ticks(6)).selectAll('text').attr('font-size', 11);
-
+			// Grid lines
+			svg
+				.append('g')
+				.attr('stroke', 'currentColor')
+				.attr('stroke-opacity', 0.08)
+				.selectAll('line')
+				.data(y.ticks(6))
+				.join('line')
+				.attr('x1', 0)
+				.attr('x2', innerWidth)
+				.attr('y1', (d) => y(d))
+				.attr('y2', (d) => y(d));
 			svg
 				.selectAll('.series')
 				.data(series)
@@ -214,7 +228,4 @@
 		</div>
 	</div>
 	<svg bind:this={svgEl} class="block w-full"></svg>
-	<figcaption class="mt-2 text-sm text-gray-500">
-		Bird strikes by year stacked by phase of flight
-	</figcaption>
 </figure>
