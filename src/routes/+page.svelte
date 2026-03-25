@@ -46,15 +46,12 @@
 		<StrikesByTraffic data={data.strikesbyYear} traffic={data.Traffic} />
 	</div>
 
-	<div class="mb-16">
-		<SpeciesBreakdown data={data.speciesStrikes} />
-	</div>
-
 	<section class="prose prose-lg mb-16">
 		<p>Paragraph here.</p>
 	</section>
 
-	<section class="prose prose-lg mb-16">
+	<section class="prose prose-lg mb-4">
+		<h2>Airport Responsibility</h2>
 		<p>
 			Airports are legally required to manage wildlife within a five-mile radius, and yet this
 			five-mile radius is actually where birds are most in danger, accounting for the vast majority
@@ -65,10 +62,7 @@
 			population). Then due to poor restructuring of the area the birds end up waiting on the tarmac
 			for their turn.
 		</p>
-	</section>
 
-	<section class="prose prose-lg mb-4">
-		<h2>Whee and When Bird Strikes Happen</h2>
 		<p>
 			Bird strikes are not distributed evenly across the country. Incidents cluster tightly around
 			major hub airports and the migratory corridors that connect them. Switch to <strong
@@ -97,8 +91,16 @@
 	</section>
 
 	<section class="prose prose-lg mb-4">
-		<h2>Granular Interaction Data</h2>
+		<h2>Species Analysis</h2>
 		<p>Exploration of the data grouped by top species and top airlines.</p>
+	</section>
+
+	<div class="mb-16">
+		<SpeciesBreakdown data={data.speciesStrikes} />
+	</div>
+
+	<section class="prose prose-lg mb-16">
+		<p>Paragraph</p>
 	</section>
 
 	<div class="flex">
@@ -108,7 +110,8 @@
 		<section class="flex-1/2 pt-40 pl-10">Test</section>
 	</div>
 
-	<section class="prose prose-lg mb-16">
+	<section class="prose prose-lg mb-4">
+		<h2>Acceptable Collateral</h2>
 		<p>
 			It would also benefit the airlines to reduce the number of collisions. The repairs alone are a
 			great cost for the airlines and have even increased in recent years, with struck engines
@@ -136,5 +139,10 @@
 			monitoring systems cost the airports money, while expanding runways into an already damaged
 			ecosystem makes money.
 		</p>
+	</section>
+
+	<section class="prose prose-lg mb-16">
+		<h2>Conclusion</h2>
+		<p>Paragraph</p>
 	</section>
 </main>
