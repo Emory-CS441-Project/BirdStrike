@@ -145,18 +145,23 @@
 		</div>
 	</div>
 
-	<section class="prose prose-lg mb-4">
+	<section class="prose prose-lg mb-8">
 		<h2>Acceptable Collateral</h2>
 		<p>
-			It would also benefit the airlines to reduce the number of collisions. The repairs alone are a
-			great cost for the airlines and have even increased in recent years, with struck engines
-			rising above 100,000$ on average to fix. These collisions can also lead to delayed flights, or
-			diversions, in the worst case there can even be forced emergency landings, injuries and even
-			death. Airlines have an incentive to avoid these collisions however they have decided to make
-			their planes more bird resistant, as opposed to reducing collisions in general. The inflation
-			adjusted cost of repairs due to a strike has been steadily decreasing since 2010. This has
-			obvious benefits for humans on vacation, but now airlines have less reason to care and birds
-			are more at risk than ever.
+			With how bad the problem is getting it would seem to benefit the airlines to reduce the number
+			of collisions. A single incident can come with a hefty repair cost depending on what was
+			broken. This can be seen in the bar charts below which show inflation adjusted cost to repair
+			different parts of the plane after an incident. Note: this is a subset of the data as not all
+			reports came with damage cost.
+		</p>
+		<p>
+			These collisions can also lead to delayed flights, diversions, emergency landings, injuries,
+			and even death. So it would seem that the airlines should be incentivize to solve the problem
+			and share the airspace with birds in a safer way. However, looking at the data a different way
+			reveals the solution they have chosen. <strong>Cost over time</strong> shows that the inflation
+			adjusted damage cost is decreasing. This means that by focusing on making planes more bird resistant,
+			and repairs cheaper, they can worry less about the effects of strikes. While this is great for airlines
+			and passengers it is terrible for birds which get treated as acceptable collateral.
 		</p>
 	</section>
 
@@ -165,19 +170,22 @@
 	</div>
 
 	<section class="prose prose-lg mb-16">
-		<p>
-			As technology improves and planes become more bird resistant, airlines will no longer have to
-			weigh human safety vs. flight delays and can just plow through birds, treating them as
-			acceptable collateral. This problem isn't unsolvable, but the airline industry as a whole has
-			been deciding not to solve it, as seen by the widespread increase in collisions across the
-			entire country. Delaying flights out of cautiousness and investing in better migration
-			monitoring systems cost the airports money, while expanding runways into an already damaged
-			ecosystem makes money.
-		</p>
-	</section>
-
-	<section class="prose prose-lg mb-16">
 		<h2>Conclusion</h2>
-		<p>Paragraph</p>
+		<p>
+			The FAA Wildlife Strike Database tells a story that the industry would prefer to frame as a
+			safety issue. Looking at the full picture: rising incident rate, geographic distraction,
+			species distribution, and cost trends, a different narrative emerges. Bird strikes are not a
+			random and unavoidable hazard. They are a predictable consequence of expanding airports into
+			ecosystems, concentrating flight operations along the same corridors that hundreds of millions
+			of birds have used for centuries, and treating the resulting collisions as an engineering
+			problem rather than an ecological one.
+		</p>
+		<p>
+			The industry's response has been to make planes more resilient and repairs cheaper not to
+			meaningfully reduce the number of birds killed. As long as the cost per strike keeps falling,
+			there is little financial incentive to do otherwise. The birds, the 946 species caught in the
+			crosshairs of commercial aviation, have no seat at the table where those decisions are made.
+			That is what makes them acceptable collateral.
+		</p>
 	</section>
 </main>
