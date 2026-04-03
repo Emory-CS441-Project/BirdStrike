@@ -25,7 +25,7 @@
 	const STACKED_HEIGHT = 400;
 	const STACKED_INNER_HEIGHT = STACKED_HEIGHT - MARGIN.top - MARGIN.bottom;
 
-	const metricLabel = (m: string) => m === 'incidents' ? 'Incidents' : 'Est. Birds Struck';
+	const metricLabel = (m: string) => (m === 'incidents' ? 'Incidents' : 'Est. Birds Struck');
 
 	function getTooltip() {
 		return d3
@@ -159,18 +159,22 @@
 					const rows = phases
 						.filter((p) => phaseCounts[p] > 0)
 						.sort((a, b) => phaseCounts[b] - phaseCounts[a])
-						.map((p) => `<span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${color(p)};margin-right:4px;"></span>${p}: <strong>${phaseCounts[p].toLocaleString()}</strong>`)
+						.map(
+							(p) =>
+								`<span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${color(p)};margin-right:4px;"></span>${p}: <strong>${phaseCounts[p].toLocaleString()}</strong>`
+						)
 						.join('<br/>');
 					tooltip
 						.style('opacity', '1')
 						.style('left', `${event.clientX + 12}px`)
 						.style('top', `${event.clientY - 10}px`)
-						.html(`<strong>${year}</strong> — ${metricLabel(metric)}<br/><strong>Total: ${total.toLocaleString()}</strong><br/><br/>${rows}`);
+						.html(
+							`<strong>${year}</strong> — ${metricLabel(metric)}<br/><strong>Total: ${total.toLocaleString()}</strong><br/><br/>${rows}`
+						);
 				})
 				.on('mouseleave', () => tooltip.style('opacity', '0'));
 
 			appendLegend(svg, phases, color, innerWidth);
-
 		} else {
 			// Split view
 			const facetGap = 16;
@@ -228,7 +232,9 @@
 							.style('opacity', '1')
 							.style('left', `${event.clientX + 12}px`)
 							.style('top', `${event.clientY - 10}px`)
-							.html(`<strong>${year}</strong><br/>${phase}<br/>${metricLabel(metric)}: <strong>${val.toLocaleString()}</strong>`);
+							.html(
+								`<strong>${year}</strong><br/>${phase}<br/>${metricLabel(metric)}: <strong>${val.toLocaleString()}</strong>`
+							);
 					})
 					.on('mouseleave', () => tooltip.style('opacity', '0'));
 

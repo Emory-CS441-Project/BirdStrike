@@ -105,7 +105,7 @@
 					.axisLeft(y)
 					.ticks(6)
 					.tickFormat((v) =>
-						mode === 'traffic' ? d3.format('~s')(v as number) : (v as number).toFixed(1)
+						mode === 'traffic' ? d3.format('~s')(v as number) : (v as number).toFixed(0)
 					)
 			)
 			.selectAll('text')
@@ -193,23 +193,15 @@
 				hoverDot.attr('cx', cx).attr('cy', cy).style('opacity', 1);
 
 				const formattedValue =
-					mode === 'traffic'
-						? d3.format(',')(Math.round(closest.value))
-						: closest.value.toFixed(2);
-				const label =
-					mode === 'traffic' ? 'Total flights' : 'Strikes per million flights';
-
-				// strikes for this year if available
-				const strikes = strikesByYear.get(closest.year);
-				const strikesLine =
-					strikes != null ? `<br/>Incidents: <strong>${strikes.toLocaleString()}</strong>` : '';
+					mode === 'traffic' ? d3.format(',')(Math.round(closest.value)) : closest.value.toFixed(2);
+				const label = mode === 'traffic' ? 'Total flights' : 'Incidents per million flights';
 
 				tooltip
 					.style('opacity', '1')
 					.style('left', `${event.clientX + 14}px`)
 					.style('top', `${event.clientY - 10}px`)
 					.html(
-						`<strong>${closest.year}</strong><br/>${label}: <strong>${formattedValue}</strong>${strikesLine}`
+						`<strong>${closest.year}</strong><br/>${label}: <strong>${formattedValue}</strong>`
 					);
 			})
 			.on('mouseleave', () => {
