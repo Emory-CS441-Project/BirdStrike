@@ -17,18 +17,17 @@
 	let svgEl: SVGSVGElement;
 	let metric: 'incidents' | 'est_birds_struck' = $state('incidents');
 	let minThreshold = $state(3000);
+	let transitioning = $state(false);
 
 	const MARGIN = { top: 10, right: 10, bottom: 10, left: 10 };
 	const HEIGHT = 600;
 
 	const color = d3.scaleOrdinal(d3.schemeTableau10);
 
-	function draw() {
+	function draw(animate = false) {
 		const width = svgEl.clientWidth;
 		const innerWidth = width - MARGIN.left - MARGIN.right;
 		const innerHeight = HEIGHT - MARGIN.top - MARGIN.bottom;
-
-		d3.select(svgEl).selectAll('*').remove();
 
 		const filtered = data.filter((d) => d[metric] >= minThreshold);
 
@@ -37,15 +36,9 @@
 			.sum((d: any) => d[metric])
 			.sort((a, b) => (b.value ?? 0) - (a.value ?? 0));
 
-		d3.treemap<any>().size([innerWidth, innerHeight]).paddingOuter(3).paddingInner(2).round(true)(
-			root
-		);
+		d3.treemap<any>().size([innerWidth, innerHeight]).paddingOuter(3).paddingInner(2).round(true)(root);
 
-		const svg = d3
-			.select(svgEl)
-			.attr('viewBox', `0 0 ${width} ${HEIGHT}`)
-			.append('g')
-			.attr('transform', `translate(${MARGIN.left},${MARGIN.top})`);
+		const svg = d3.select(svgEl).attr('viewBox', `0 0 ${width} ${HEIGHT}`);
 
 		const tooltip = d3
 			.select('body')
@@ -68,7 +61,32 @@
 
 		const leaves = root.leaves();
 
-		const cell = svg
+		if (animate) {
+			// Fade out existing cells, then redraw
+			svg.select('g.treemap-root')
+				.transition().duration(180).style('opacity', '0')
+				.on('end', () => {
+					svg.selectAll('*').remove();
+					renderCells(svg, leaves, tooltip, animate);
+				});
+		} else {
+			svg.selectAll('*').remove();
+			renderCells(svg, leaves, tooltip, false);
+		}
+	}
+
+	function renderCells(
+		svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+		leaves: d3.HierarchyRectangularNode<any>[],
+		tooltip: d3.Selection<HTMLDivElement, null, HTMLElement, any>,
+		animate: boolean
+	) {
+		const g = svg.append('g')
+			.attr('class', 'treemap-root')
+			.attr('transform', `translate(${MARGIN.left},${MARGIN.top})`)
+			.style('opacity', animate ? '0' : '1');
+
+		const cell = g
 			.selectAll('g')
 			.data(leaves)
 			.join('g')
@@ -81,39 +99,34 @@
 					.style('top', `${event.clientY - 10}px`)
 					.html(
 						`<strong>${d.data.species}</strong><br/>` +
-							`Incidents: ${d.data.incidents.toLocaleString()}<br/>` +
-							`Est. birds struck: ${d.data.est_birds_struck.toLocaleString()}`
+						`Incidents: ${d.data.incidents.toLocaleString()}<br/>` +
+						`Est. birds struck: ${d.data.est_birds_struck.toLocaleString()}`
 					);
 			})
 			.on('mouseleave', () => tooltip.style('opacity', '0'));
 
-		cell
-			.append('rect')
+		cell.append('rect')
 			.attr('width', (d: any) => Math.max(0, d.x1 - d.x0))
 			.attr('height', (d: any) => Math.max(0, d.y1 - d.y0))
 			.attr('rx', 3)
 			.attr('fill', (d: any) => color(d.data.species))
 			.attr('opacity', 0.85);
 
-		cell
-			.append('clipPath')
+		cell.append('clipPath')
 			.attr('id', (_: any, i: number) => `clip-${i}`)
 			.append('rect')
 			.attr('width', (d: any) => Math.max(0, d.x1 - d.x0 - 4))
 			.attr('height', (d: any) => Math.max(0, d.y1 - d.y0 - 4));
 
-		cell
-			.append('text')
+		cell.append('text')
 			.attr('clip-path', (_: any, i: number) => `url(#clip-${i})`)
-			.attr('x', 5)
-			.attr('y', 14)
+			.attr('x', 5).attr('y', 14)
 			.attr('font-size', (d: any) => {
 				const w = d.x1 - d.x0;
 				const h = d.y1 - d.y0;
 				return Math.min(13, Math.max(9, Math.sqrt(w * h) / 10)) + 'px';
 			})
-			.attr('fill', '#fff')
-			.attr('font-weight', 500)
+			.attr('fill', '#fff').attr('font-weight', 500)
 			.style('pointer-events', 'none')
 			.each(function (d: any) {
 				const w = d.x1 - d.x0;
@@ -123,13 +136,26 @@
 				el.text(d.data.species);
 				if (h > 30) {
 					el.append('tspan')
-						.attr('x', 5)
-						.attr('dy', '1.3em')
-						.attr('font-weight', 400)
-						.attr('font-size', '10px')
+						.attr('x', 5).attr('dy', '1.3em')
+						.attr('font-weight', 400).attr('font-size', '10px')
 						.text(d.data[metric].toLocaleString());
 				}
 			});
+
+		// Fade in
+		if (animate) {
+			g.transition().duration(220).style('opacity', '1');
+		}
+	}
+
+	async function switchMetric(newMetric: 'incidents' | 'est_birds_struck') {
+		if (newMetric === metric || transitioning) return;
+		transitioning = true;
+		metric = newMetric;
+		// Small tick to let Svelte update metric before drawing
+		await Promise.resolve();
+		draw(true);
+		setTimeout(() => { transitioning = false; }, 420);
 	}
 
 	onMount(() => {
@@ -140,9 +166,8 @@
 	});
 
 	$effect(() => {
-		metric;
 		minThreshold;
-		if (svgEl) draw();
+		if (svgEl) draw(true);
 	});
 </script>
 
@@ -151,19 +176,19 @@
 		<div class="mr-auto flex gap-2">
 			<button
 				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
-          {metric === 'incidents'
+					{metric === 'incidents'
 					? 'bg-gray-700 text-white'
 					: 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
-				onclick={() => (metric = 'incidents')}
+				onclick={() => switchMetric('incidents')}
 			>
 				Incidents
 			</button>
 			<button
 				class="cursor-pointer rounded px-3 py-1 text-sm font-medium transition-colors
-          {metric === 'est_birds_struck'
+					{metric === 'est_birds_struck'
 					? 'bg-gray-700 text-white'
 					: 'bg-gray-100 text-gray-700 hover:bg-gray-200'}"
-				onclick={() => (metric = 'est_birds_struck')}
+				onclick={() => switchMetric('est_birds_struck')}
 			>
 				Estimated Strikes
 			</button>

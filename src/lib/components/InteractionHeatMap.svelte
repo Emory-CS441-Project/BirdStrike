@@ -14,6 +14,19 @@
 	const MT = 90;
 	const MB = 44;
 
+	// Tooltip state
+	interface TooltipState {
+		visible: boolean;
+		x: number;
+		y: number;
+		species: string;
+		operator: string;
+		birds: number;
+	}
+	let tooltip: TooltipState = $state({
+		visible: false, x: 0, y: 0, species: '', operator: '', birds: 0
+	});
+
 	const species = $derived([...new Set(data.heatmap.map((d) => d.species))]);
 	const operators = $derived([...new Set(data.heatmap.map((d) => d.operator))]);
 	const cellMap = $derived(new Map(data.heatmap.map((d) => [`${d.species}|${d.operator}`, d])));
@@ -71,21 +84,43 @@
 				.text(sp);
 		});
 
-		// cells
+		// cells with hover interactivity
 		species.forEach((sp, si) => {
 			operators.forEach((op, oi) => {
-				const v = cellMap.get(`${sp}|${op}`)?.birds ?? 0;
+				const entry = cellMap.get(`${sp}|${op}`);
+				const v = entry?.birds ?? 0;
+
 				g.append('rect')
 					.attr('x', oi * STEP)
 					.attr('y', si * STEP)
 					.attr('width', CELL)
 					.attr('height', CELL)
 					.attr('rx', 2)
-					.attr('fill', color(v));
+					.attr('fill', color(v))
+					.style('cursor', 'default')
+					.style('transition', 'opacity 0.1s')
+					.on('mousemove', (event) => {
+						// Highlight: slight brightness via opacity shift on siblings handled via tooltip state
+						tooltip = {
+							visible: true,
+							x: event.clientX,
+							y: event.clientY,
+							species: sp,
+							operator: op,
+							birds: v
+						};
+						// Dim all cells, brighten this one
+						g.selectAll('rect').style('opacity', 0.45);
+						d3.select(event.currentTarget as SVGRectElement).style('opacity', 1);
+					})
+					.on('mouseleave', () => {
+						tooltip = { ...tooltip, visible: false };
+						g.selectAll('rect').style('opacity', 1);
+					});
 			});
 		});
 
-		// gradient legend — spans exact width of cell grid
+		// gradient legend
 		const legendY = species.length * STEP + 16;
 		const gradId = 'hm-legend-grad';
 
@@ -97,36 +132,26 @@
 			.attr('x2', '100%');
 
 		['#e0f2fe', '#38bdf8', '#1d6fa4', '#1e3a5f'].forEach((c, i, arr) => {
-			grad
-				.append('stop')
+			grad.append('stop')
 				.attr('offset', `${(i / (arr.length - 1)) * 100}%`)
 				.attr('stop-color', c);
 		});
 
 		g.append('rect')
-			.attr('x', 0)
-			.attr('y', legendY)
-			.attr('width', gridW)
-			.attr('height', 7)
-			.attr('rx', 2)
-			.attr('fill', `url(#${gradId})`);
+			.attr('x', 0).attr('y', legendY)
+			.attr('width', gridW).attr('height', 7)
+			.attr('rx', 2).attr('fill', `url(#${gradId})`);
 
 		g.append('text')
-			.attr('x', 0)
-			.attr('y', legendY + 17)
-			.attr('font-size', 10)
-			.attr('font-family', 'monospace')
-			.attr('fill', '#64748b')
-			.text('0');
+			.attr('x', 0).attr('y', legendY + 17)
+			.attr('font-size', 10).attr('font-family', 'monospace')
+			.attr('fill', '#64748b').text('0');
 
 		g.append('text')
-			.attr('x', gridW)
-			.attr('y', legendY + 17)
+			.attr('x', gridW).attr('y', legendY + 17)
 			.attr('text-anchor', 'end')
-			.attr('font-size', 10)
-			.attr('font-family', 'monospace')
-			.attr('fill', '#64748b')
-			.text(maxBirds.toLocaleString());
+			.attr('font-size', 10).attr('font-family', 'monospace')
+			.attr('fill', '#64748b').text(maxBirds.toLocaleString());
 	}
 
 	$effect(() => {
@@ -143,11 +168,29 @@
 	});
 </script>
 
+<!-- Floating tooltip -->
+{#if tooltip.visible}
+	<div
+		class="pointer-events-none fixed z-50 rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-lg"
+		style="left:{tooltip.x + 14}px; top:{tooltip.y - 10}px; font-size:13px; line-height:1.6; min-width:160px"
+	>
+		<div class="font-semibold text-gray-800">{tooltip.species}</div>
+		<div class="text-gray-500 text-xs">{tooltip.operator}</div>
+		<div class="mt-1 text-gray-700">
+			{#if tooltip.birds === 0}
+				<span class="text-gray-400 italic">No recorded strikes</span>
+			{:else}
+				<strong>{tooltip.birds.toLocaleString()}</strong> birds struck
+			{/if}
+		</div>
+	</div>
+{/if}
+
 <figure class="overflow-visible font-mono">
 	<div class="overflow-visible">
 		<svg bind:this={svgEl}></svg>
 	</div>
 	<figcaption class="mt-2 ml-15 text-xs text-slate-500">
-		Bird strikes between the most active species and airlines
+		Bird strikes between the most active species and airlines. Hover a cell for details.
 	</figcaption>
 </figure>
