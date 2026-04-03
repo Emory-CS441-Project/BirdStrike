@@ -51,6 +51,7 @@
 	function draw() {
 		const innerWidth = svgEl.clientWidth - MARGIN.left - MARGIN.right;
 		const values = getValues();
+		const lineColor = mode === 'traffic' ? '#378ADD' : '#D85A30';
 
 		d3.select(svgEl).selectAll('*').remove();
 
@@ -89,6 +90,7 @@
 			.attr('x2', innerWidth)
 			.attr('y1', (d) => y(d))
 			.attr('y2', (d) => y(d));
+
 		svg
 			.append('g')
 			.attr('transform', `translate(0,${INNER_HEIGHT})`)
@@ -109,13 +111,112 @@
 			.selectAll('text')
 			.attr('font-size', 11);
 
+		// Line path
 		svg
 			.append('path')
 			.datum(values)
 			.attr('fill', 'none')
-			.attr('stroke', mode === 'traffic' ? '#378ADD' : '#D85A30')
+			.attr('stroke', lineColor)
 			.attr('stroke-width', 2)
 			.attr('d', line);
+
+		// Dots for each data point
+		svg
+			.selectAll('circle.dot')
+			.data(values)
+			.join('circle')
+			.attr('class', 'dot')
+			.attr('cx', (d) => x(d.year))
+			.attr('cy', (d) => y(d.value))
+			.attr('r', 3)
+			.attr('fill', lineColor)
+			.attr('stroke', 'white')
+			.attr('stroke-width', 1.5);
+
+		// Tooltip + crosshair elements
+		const tooltip = d3
+			.select('body')
+			.selectAll('.linechart-tooltip')
+			.data([null])
+			.join('div')
+			.attr('class', 'linechart-tooltip')
+			.style('position', 'fixed')
+			.style('pointer-events', 'none')
+			.style('background', 'var(--color-background-primary, #fff)')
+			.style('border', '1px solid var(--color-border-tertiary, #ddd)')
+			.style('border-radius', '6px')
+			.style('padding', '8px 12px')
+			.style('font-size', '12px')
+			.style('line-height', '1.5')
+			.style('max-width', '220px')
+			.style('box-shadow', '0 2px 8px rgba(0,0,0,0.12)')
+			.style('opacity', '0')
+			.style('z-index', '9999');
+
+		const crosshair = svg
+			.append('line')
+			.attr('class', 'crosshair')
+			.attr('y1', 0)
+			.attr('y2', INNER_HEIGHT)
+			.attr('stroke', 'currentColor')
+			.attr('stroke-opacity', 0.25)
+			.attr('stroke-dasharray', '4,3')
+			.attr('pointer-events', 'none')
+			.style('opacity', 0);
+
+		const hoverDot = svg
+			.append('circle')
+			.attr('r', 5)
+			.attr('fill', lineColor)
+			.attr('stroke', 'white')
+			.attr('stroke-width', 2)
+			.attr('pointer-events', 'none')
+			.style('opacity', 0);
+
+		// Invisible overlay for mouse tracking
+		svg
+			.append('rect')
+			.attr('width', innerWidth)
+			.attr('height', INNER_HEIGHT)
+			.attr('fill', 'transparent')
+			.on('mousemove', (event) => {
+				const [mx] = d3.pointer(event);
+				const hoveredYear = Math.round(x.invert(mx));
+				const closest = values.reduce((a, b) =>
+					Math.abs(b.year - hoveredYear) < Math.abs(a.year - hoveredYear) ? b : a
+				);
+
+				const cx = x(closest.year);
+				const cy = y(closest.value);
+
+				crosshair.attr('x1', cx).attr('x2', cx).style('opacity', 1);
+				hoverDot.attr('cx', cx).attr('cy', cy).style('opacity', 1);
+
+				const formattedValue =
+					mode === 'traffic'
+						? d3.format(',')(Math.round(closest.value))
+						: closest.value.toFixed(2);
+				const label =
+					mode === 'traffic' ? 'Total flights' : 'Strikes per million flights';
+
+				// strikes for this year if available
+				const strikes = strikesByYear.get(closest.year);
+				const strikesLine =
+					strikes != null ? `<br/>Incidents: <strong>${strikes.toLocaleString()}</strong>` : '';
+
+				tooltip
+					.style('opacity', '1')
+					.style('left', `${event.clientX + 14}px`)
+					.style('top', `${event.clientY - 10}px`)
+					.html(
+						`<strong>${closest.year}</strong><br/>${label}: <strong>${formattedValue}</strong>${strikesLine}`
+					);
+			})
+			.on('mouseleave', () => {
+				crosshair.style('opacity', 0);
+				hoverDot.style('opacity', 0);
+				tooltip.style('opacity', '0');
+			});
 	}
 
 	onMount(() => {
